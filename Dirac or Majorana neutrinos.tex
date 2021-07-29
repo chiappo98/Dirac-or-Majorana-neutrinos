@@ -19,7 +19,7 @@
 \maketitle
 
 \begin{abstract}
-In this paper I will present the state of the research on neutrinos, together with several still open questions. In particular our focus will be set on wether neutrinos are Dirac or Majorana particles. In the end we will describes the experiments that attempt to observe a neutrinoless double beta decay in even-even nuclei%~\ref{}
+In this paper I will present the state of the research on neutrinos, together with several still open questions. In particular our focus will be set on whether neutrinos are Dirac or Majorana particles. In the end we will describes the experiments that attempt to observe a neutrinoless double beta decay in even-even nuclei%~\ref{}
 , which will prove the Majorana nature of these particles.
 \end{abstract}
 
@@ -44,10 +44,10 @@ This energy corresponds only to the maximum electron energy of \emph{Figure}~\re
 \label{fig:betaD}
 \end{figure}
 
-The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron enrgies range up to the value given in equation ~\ref{eq:Emax}.
-Fermi called this particle \emph{neutrino}, and it was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for the inverse beta decay reaction.%see later/section ~\ref{sec:}
+The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation ~\ref{eq:Emax}.
+Fermi called this particle \emph{neutrino}, and it was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions.%see later/section ~\ref{sec:}
 
-Today we know the existance of three flavours of neutrinos, associated to the correspondig charged leptons %~\ref{} (maybe inside caption)
+Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons %~\ref{cottingham} (maybe inside caption)
 :
 \begin{table}[H]
 \begin{tabular}{cccc}
@@ -66,23 +66,51 @@ $\nu_\tau$ & 0 &  & 0\\
 \label{tab:classification}
 \end{table}
  
-According to the Standard Model (SM) neutrinos are \emph{massless} fermions. Leptons in the table above all hav Total Lepton Number $L=+1$, while their antiparticles have $L=-1$, toghether with opposite electric charge.
+According to the Standard Model (SM) neutrinos are \emph{massless} fermions. Leptons in the table above all have Total Lepton Number $L=+1$, while their antiparticles have $L=-1$, together with opposite electric charge.
+
+An interesting feature of weak interactions is that it does not conserve parity. Indeed, it was demonstrated by Madame Wu in 1957 that only left-handed components of electrons and neutrinos participate in the interaction, and the same for other flavors.
 
 \subsection{Neutrinos production and interaction}
-
+Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions,but also in weak decays of instable atomic nuclei. 
 \begin{eqnletter}
-\pi^+ &\rightarrow& \mu^++\nu_\mu \\
-\mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu
+\label{eq:lep}
+\mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu \label{eq:Lep}\\
+\pi^+ &\rightarrow& \mu^++\nu_\mu \label{eq:semiL1}\\
+K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
+&\hookrightarrow& \pi^0+e^++\bar{\nu}_e \label{eq:semiL3}
 \end{eqnletter}
+On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrinos source for particle physics experiments.
 
- Being neutral leptons they interact only through weak interactions, and hence are very difficult to detect.
+Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
+These mediator are massive %\cite{pdg}:
+\begin{gather}
+M_W=80.379\pm0.012 GeV/c^2 \\
+M_Z=91.1876\pm0.0021 GeV/c^2
+\end{gather}
+It is this fact that makes interactions medited by these bosons weak and short-ranged.
+
+Being neutral leptons neutrinos interact only through weak interactions, and hence are very difficult to detect. %insert weak coupling and cross sections?
+On the other side they are very useful to study weak interactions since weak transition amplitude of processes in which they are involved is not overcame by strong or electromagnetic amplitudes.
+Neutrinos can be detected through the inverse beta decay interaction
+\begin{equation}
+\bar{\nu}_e+p \rightarrow e^++n
+\end {equation}
+that is, observing the emitted charged lepton, usually by its Cherenkov emission. %verify
+Another interaction channel is elastic scattering 
+\begin{equation}
+\nu_i+e^- \rightarrow \nu_i+e^- \quad \text{where $i=e, \mu, \tau$}
+\end{equation}
+which has the advantage of involving all neutrino flavors.
+
+\subsection{Neutrino mixing and CP violation}
 
 
-\subsection{Fermi Theory}%?????
 \subsection{Dirac equation}
 \subsection{Majorana neutrinos}
 
 \section{Nutrinoless double beta decay}
+\subsection{Theory}
+\subsection{Experiments}
 
 
 
@@ -96,27 +124,6 @@ and~(\ref{e.phi}):
                      \tx{where\ } \sy{F} = \tx{Fermi}    \label{e.house}\\
  \phi_i        & = & i\pi                                \label{e.phi}
 \end{eqnletter}
-
-\subsection{Tables}
-
-Tables~\ref{tab:pricesI}
-inserted at this point.yes, but...
-
-\begin{table}[]
-  \caption{Prices of important items.}
-  \label{tab:pricesI}
-  \begin{tabular}{lcr}
-  \hline
-  Ice-cream      & 2.50  & euro    \\
-  More ice-cream & 2500 & euro    \\
-  Crocodile      & 1500  & dollars \\
-  \hline
-  Phone call     & .25   & dollars \\
-  X-Men          & 1.25  & dollars \\
-  Dollar         & 1     & dollars \\
-  \hline 
-  \end{tabular}
-\end{table}
 
 \subsection{Citations}
 We're almost done, just some citations~\cite{ref:apo}
