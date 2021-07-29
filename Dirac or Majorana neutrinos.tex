@@ -4,6 +4,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{float}
 \usepackage{siunitx}
+\usepackage{booktabs}
 
 \begin{document}
 
@@ -25,23 +26,57 @@ In this paper I will present the state of the research on neutrinos, together wi
 \section{An elusive particle}
 \subsection{History}
 The neutrino was first theorized in 1930 by Wolfgang Pauli in order to account for conservation of energy and momentum in beta decays.
-At the beginning thes processes were though to proceed as
+At the beginning these processes were though to proceed as
 \[
 ^A_Z X\rightarrow ^A_{Z+1}Y+e^-
 \]
-However looking at the energy spectrum of emitted electrons (\emph{Fig.}~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missed!
+However looking at the energy spectrum of emitted electrons (\emph{Fig.}~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missed. For a two body decay the electrons' energy spectrum should form a sharp peak around 
+\begin{equation}
+E=\biggl(\frac{m^2_A-m^2_B+m^2_e}{2m_A}\biggr)c^2
+\label{eq:Emax}
+\end{equation}
+This energy corresponds only to the maximum electron energy of \emph{Figure}~\ref{fig:betaD}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{energy_spectrum.png}
 \caption{The beta decay spectrum of tritium ($^3_1H\rightarrow ^3_2He$). (\emph{Source}: G.M. Lewis, \emph{Neutrinos} (London: Wykeham, 1970))}
 \label{fig:betaD}
 \end{figure}
 
-It had to be a neutral and low-interacting particle, in other words... a neutrino.
+The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron enrgies range up to the value given in equation ~\ref{eq:Emax}.
+Fermi called this particle \emph{neutrino}, and it was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for the inverse beta decay reaction.%see later/section ~\ref{sec:}
+
+Today we know the existance of three flavours of neutrinos, associated to the correspondig charged leptons %~\ref{} (maybe inside caption)
+:
+\begin{table}[H]
+\begin{tabular}{cccc}
+\toprule
+Lepton & Charge & Mean life (s) & Mass ($MeV/c^2$)\\
+\midrule
+$e^-$ & $-e$ & $\infty$ & 0.511\\
+$\nu_e$ & 0 &  & 0\\
+$\mu^-$ & $-e$ & $2.197\cdot10^{-6}$ & 105.658\\
+$\nu_\mu$ & 0 & & 0\\
+$\tau^-$ & $-e$ & $(291.0\pm1.5)\cdot10^{-15}$ & 1777\\
+$\nu_\tau$ & 0 &  & 0\\
+\bottomrule
+\end{tabular}
+\caption{Leptons.}
+\label{tab:classification}
+\end{table}
+ 
+According to the Standard Model (SM) neutrinos are \emph{massless} fermions. Leptons in the table above all hav Total Lepton Number $L=+1$, while their antiparticles have $L=-1$, toghether with opposite electric charge.
 
 \subsection{Neutrinos production and interaction}
-Neutrinos are spin-$\frac{1}{2}$ fermions, with charge $q=0$  and, according to the Standard Model (SM) they are massless. Being neutral leptons they interact only through weak interactions, and hence are very difficult to detect.
+
+\begin{eqnletter}
+\pi^+ &\rightarrow& \mu^++\nu_\mu \\
+\mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu
+\end{eqnletter}
+
+ Being neutral leptons they interact only through weak interactions, and hence are very difficult to detect.
+
 
 \subsection{Fermi Theory}%?????
 \subsection{Dirac equation}
