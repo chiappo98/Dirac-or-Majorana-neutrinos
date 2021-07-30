@@ -1,11 +1,12 @@
 \documentclass{subnucbo}
 \usepackage[utf8]{inputenc}
-\usepackage[english,ngerman]{babel}
+\usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
 \usepackage{float}
 \usepackage{siunitx}
 \usepackage{booktabs}
+\usepackage{mathrsfs}
 
 \begin{document}
 
@@ -53,7 +54,7 @@ Today we know the existence of three flavors of neutrinos, associated to the cor
 \begin{table}[H]
 \begin{tabular}{cccc}
 \toprule
-Lepton & Charge & Mean life (s) & Mass ($MeV/c^2$)\\
+Lepton & Charge & Mean life (s) & Mass (MeV)\\
 \midrule
 $e^-$ & $-e$ & $\infty$ & 0.511\\
 $\nu_e$ & 0 &  & 0\\
@@ -86,8 +87,8 @@ On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusi
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
 These mediator are massive %\cite{pdg}:
 \begin{gather}
-M_W=80.379\pm0.012 GeV/c^2 \\
-M_Z=91.1876\pm0.0021 GeV/c^2
+M_W=80.379\pm0.012 GeV \\
+M_Z=91.1876\pm0.0021 GeV
 \end{gather}
 It is this fact that makes interactions mediated by these bosons weak and short-ranged.%insert weak coupling and cross sections?
 
@@ -112,7 +113,32 @@ Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrino
 
 \subsection{Dirac equation}
 The Dirac equation was invented by Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\Psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
-A free electron
+The Dirac equation is
+\begin{equation}
+\label{eq:dir}
+(i\gamma^{\mu}\delta_{\mu}-m)\psi=0
+\end{equation}
+where the Dirac spinor is composed by a left-handed spinor and a right-handed spinor.
+\begin{equation} 
+\psi=\begin{bmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{bmatrix}=\begin{bmatrix}\psi_L\\ \psi_R \end{bmatrix}
+\end{equation}
+
+From Dirac equation it is possible to build a Lagrangian density
+\begin{equation}
+\mathcal{L}=\bar{\psi}(i\gamma^{\mu}\delta_{\mu}-m)\psi
+\end{equation}
+where $\bar{\psi}$ is the row matrix $\bar{\psi}=\psi^{\dagger}\gamma^0$.
+
+Equation (\ref{eq:dir}) has plane wave solutions of the form
+\begin{equation}
+\psi_L=u_Le^{i(\vec{p}\cdot\vec{r}-Et)},
+\qquad
+\psi_R=u_Re^{i(\vec{p}\cdot\vec{r}-Et)}
+\end{equation}
+where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose in a frame in which a particle is at rest, i.e. $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus found positive energy solutions
+%\begin{equation}
+
+
 \subsection{Majorana neutrinos}
 
 \section{Nutrinoless double beta decay}
@@ -157,6 +183,10 @@ the auspices of the Italian Physical Society.
   in \TITLE{Workers Playtime},
                   edited by \NAME{Tizio A. \atque Caio B.}
                   (Unexeditor, Bologna) 1997, pp.~1-10.
+
+\bibitem{ref:cott} \BY{Cottingham~W.N. \atque Greenwood~D.A.} 
+\TITLE {An introduction to the Standard Model of Particle Physics. Second edition.} Cambridge University Press, 2007.
+%\bibitem{ref:
 \end{thebibliography}
 
 \end{document}
