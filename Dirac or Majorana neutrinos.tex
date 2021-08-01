@@ -47,7 +47,7 @@ This energy corresponds only to the maximum electron energy of \emph{Figure}~\re
 \end{figure}
 
 The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
-Fermi called this particle \emph{neutrino}, and it was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
+Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
 
 Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons %~\ref{cottingham} (maybe inside caption)
 :
@@ -74,7 +74,7 @@ An interesting feature of weak interactions is that it does not conserve parity.
 
 \subsection{Neutrinos production and interaction}
 \label{sec:prod}
-Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions,but also in weak decays of unstable atomic nuclei. 
+Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions, but also in weak decays of unstable atomic nuclei. 
 \begin{eqnletter}
 \label{eq:lep}
 \mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu \label{eq:Lep}\\
@@ -85,7 +85,7 @@ K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
 On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrinos source for particle physics experiments.
 
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
-These mediator are massive %\cite{pdg}:
+These mediators are massive %\cite{pdg}:
 \begin{gather}
 M_W=80.379\pm0.012 GeV \\
 M_Z=91.1876\pm0.0021 GeV
@@ -108,11 +108,12 @@ which has the advantage of involving all neutrino flavors.
 \subsection{Neutrino mixing and CP violation}
 Several experiments which study the flux of neutrinos coming from a nuclear reactor, or of Solar and atmospheric neutrinos observed some discrepancies, such as,  for example, the fact that the flux of electron neutrinos arriving on Earth form the Sun is about an half of that expected from theory.
 Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrinos, are able to explain these observations. However in this way conservation of Lepton number is violated, and what's more, neutrino mixing implies that $e$, $\mu$ and $\tau$ neutrinos are not massless, as conceived by Bruno Pontecorvo in 1968. %\cite?? (WRAP theses pag.8)
+%say something on Majorana neutrinos??
 
 \section{Theory}
 
 \subsection{Dirac equation}
-The Dirac equation was invented by Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\Psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
+The Dirac equation was invented by Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
 The Dirac equation is
 \begin{equation}
 \label{eq:dir}
@@ -125,6 +126,7 @@ where the Dirac spinor is composed by a left-handed spinor and a right-handed sp
 
 From Dirac equation it is possible to build a Lagrangian density
 \begin{equation}
+\label{eq:DirLag}
 \mathcal{L}=\bar{\psi}(i\gamma^{\mu}\delta_{\mu}-m)\psi
 \end{equation}
 where $\bar{\psi}$ is the row matrix $\bar{\psi}=\psi^{\dagger}\gamma^0$.
@@ -135,9 +137,31 @@ Equation (\ref{eq:dir}) has plane wave solutions of the form
 \qquad
 \psi_R=u_Re^{i(\vec{p}\cdot\vec{r}-Et)}
 \end{equation}
-where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose in a frame in which a particle is at rest, i.e. $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus found positive energy solutions
-%\begin{equation}
+where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose the particle rest frame, i.e. in which $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus found positive and negative energy solutions%solve problem about spinors u and u_L
+\begin{gather}
+\psi_L=ue^{-imt},\qquad  \psi_R=ue^{-imt} \\
+\psi_L=ve^{imt},\qquad  \psi_R=-ve^{imt}
+\end{gather}
+The latter have to be interpreted as positive energy antiparticle states.
+The total Lagrangian density which describes weak interactions of leptons is determined by the requirement of $U_Y(1)\times SU_L(2)$ local gauge symmetry.
+Generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
+This mechanism could in principle be applied also to neutrinos, however since values of neutrino masses are many order of magnitude smaller than those of other fermions it is very unlikely they have a common SM Higgs origin.
+Another possibility is the method of the effective Lagrangian which, after SSB generates Majorana neutrinos with definite masses and suppression via seesaw mechanism of neutrino masses with respect to SM masses of leptons and quarks.
 
+If neutrinos are Dirac particles total lepton number \emph{L} is conserved, and neutrino $\nu_i$ and antineutrino $\bar{\nu}_i$ have lepton number respectively  $L(\nu_i)=+1$ and $L(\bar{\nu}_i)=-1$.
+For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos through any quantum number.
+
+\subsection{Higgs mechanism for fermion masses}
+The standard Higgs mechanism of the generation of fermion masses proceed through the Lagrangian 
+\begin{equation}
+\mathcal{L}_Y(x)=-\sqrt{2}\sum_{l_1,l_2}\bar{\psi}_{l_1L}(x)Y_{l_1l_2}l'_{2R}(x)\phi(c)+h.c.
+\end{equation}
+where
+\begin{equation}
+\psi_{lL}(x)=\begin{bmatrix}\nu'_{lL}(x)\\ l'_L(x) \end{bmatrix}\quad(l=e, \mu, \tau),\qquad
+\phi=\begin{bmatrix}\phi_+(x)\\ \phi_0(x) \end{bmatrix}
+\end{equation}
+are lepton and Higgs doublets, while $l'_R(x)$ is a right handed lepton singlet field and $Y$ is a $3\times3$ dimensionless complex matrix containing coupling constants %of yukawa interaction??
 
 \subsection{Majorana neutrinos}
 
