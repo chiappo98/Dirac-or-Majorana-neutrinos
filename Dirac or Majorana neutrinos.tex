@@ -170,23 +170,43 @@ We spontaneously break the symmetry choosing
 with $v=(\sqrt{2}G_F)^{-1/2}\simeq246GeV$ which is the vev of the Higgs field.
 Lagrangian (\ref{eq:ElectronLag}) then becomes
 \begin{equation}
-\mathcal{L}_Y^e(x)=-\frac{g_e}{\sqrt{2}}v(\bar{e}_Le_R+\bar{e}_Re_L)--\frac{g_e}{\sqrt{2}}(\bar{e}_Le_R+\bar{e}_Re_L)H(x)
+\mathcal{L}_Y^e(x)=-\frac{g_e}{\sqrt{2}}v(\bar{e}_Le_R+\bar{e}_Re_L)-\frac{g_e}{\sqrt{2}}(\bar{e}_Le_R+\bar{e}_Re_L)H(x)
 \end{equation}
-Here we can make the identification 
-\begin{equation}
-m_e=\frac{g_ev}{\sqrt{2}}
-\end{equation}
-which gives as the electron mass.
+Here we can make the identification $m_e=g_ev/\sqrt{2}$ which gives as the electron mass.
 
 For neutrinos in principle the same mechanism is valid, so that we start from the Lagrangian
 \begin{equation}
-\mathcal{L}_Y^{\nu}(x)=-g_{\nu_e}(\bar{l}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C l_{eL})
+\label{eq:nuLag}
+\mathcal{L}_Y^{\nu_e}(x)=-g_{\nu_e}(\bar{l}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C l_{eL})
 \end{equation}
 where
 \begin{equation}
-\phi_C=i\tau_2\phi*=\begin{pmatrix}\bar{\phi}^0 \\ -\phi^-\end{pmatrix}
+\phi_C(x)=i\tau_2\phi*(x)=\begin{pmatrix}\bar{\phi}^0(x) \\ -\phi^-(x)\end{pmatrix}
 \end{equation}
-is the charge conjugated field.
+is the charge conjugated field. Through SSB we obtain $\phi_C(x)=\begin{pmatrix}(v+H(x))/\sqrt{2}\\0\end{pmatrix}$, such that Lagrangian (\ref{eq:nuLag}) can be rewritten as
+\begin{equation}
+\label{eq:nuMassLag}
+\mathcal{L}_Y^{\nu_e}(x)=-\frac{g_{\nu_e}}{\sqrt{2}}v(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})-\frac{g_{\nu_e}}{\sqrt{2}}(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})H(x)
+\end{equation}
+We finally obtained a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$.
+
+It is easy to check that the Lagrangian of the Standard Model with the Yukawa interaction~\ref{eq:nuMassLag} is invariant under the global transformation
+\[
+\nu_{eL}(x)\rightarrow e^{i\theta}\nu_{eL}(x),\quad\nu_{eR}(x)\rightarrow e^{i\theta}\nu_{eR}(x),
+\quad e_L(x)\rightarrow e^{i\theta}e_L(x),\quad e_R(x)\rightarrow e^{i\theta}e_R(x)
+\]
+where $\theta$ is an arbitrary constant. Thus in the SM with massive neutrinos the total lepton number L is conserved  \emph{and $\nu_i(x)$ is the Dirac field of neutrinos (L=1) and antineutrinos (L=-1)}.
+
+Although this mechanism of generation of neutrino masses is legitimate, if we look at the value of the Yukawa coupling $g_{\nu_e}$ it is many order of magnitudes smaller than the couplings for the other fermions:%cite ???
+\[
+2\cdot10^{-13}\leq g_{\nu_e}\leq10^{-12} \quad \text{while}\quad g_t\simeq7\cdot10^{-1}, g_b\simeq2\cdot10^{-2}, g_{\tau}\simeq7\cdot10^{-3}
+\]
+It looks extremely implausible that they have a common origin. This is also true if we think about smallness of neutrino masses, even if their absolute values are still unknown from neutrino oscillation and cosmological data the mass of the heaviest neutrino has been estimated to be
+\[
+5\cdot10^{-2}eV\simeq\biggl(\sqrt{\Delta m^2_A}\biggr)\leq m_3\leq\biggl(\frac{1}{3}\sum_im_i\biggr)\simeq3\cdot10^{-1}eV
+\]
+%\cite ???
+where $\Delta m^2_A$ is the atmosphere neutrino mass-squared difference.
 
 \subsection{Majorana neutrinos}
 
@@ -235,7 +255,10 @@ the auspices of the Italian Physical Society.
 
 \bibitem{ref:cott} \BY{Cottingham~W.N. \atque Greenwood~D.A.} 
 \TITLE {An introduction to the Standard Model of Particle Physics. Second edition.} Cambridge University Press, 2007.
-%\bibitem{ref:
+\bibitem{ref:ait2} \BY{Aitchison~I.J.R. \atque Hey~A.J.G.} \TITLE{Gauge Theories in Particle Physics. A practical introduction. Vol.2}, in \TITLE{Graduate student series in Physics}, edited by \NAME{Brewer~D.A.} (Institute of Physics Publishing, Bristol and Philadelphia) 2004.
+%pp368-372
+\bibitem{ref:Halzen} \BY{Halzen~F. \atque Martin~A.D.} \TITLE{Quarks and Leptons: An Introductory Course in Modern Particle Physics} 
+(John Wiley \& Sons.) 1984. %pp 338-340
 \end{thebibliography}
 
 \end{document}
