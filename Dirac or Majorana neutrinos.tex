@@ -121,7 +121,7 @@ The Dirac equation is
 \end{equation}
 where the Dirac spinor is composed by a left-handed spinor and a right-handed spinor.
 \begin{equation} 
-\psi=\begin{bmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{bmatrix}=\begin{bmatrix}\psi_L\\ \psi_R \end{bmatrix}
+\psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_L\\ \psi_R \end{pmatrix}
 \end{equation}
 
 From Dirac equation it is possible to build a Lagrangian density
@@ -152,16 +152,41 @@ If neutrinos are Dirac particles total lepton number \emph{L} is conserved, and 
 For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos through any quantum number.
 
 \subsection{Higgs mechanism for fermion masses}
-The standard Higgs mechanism of the generation of fermion masses proceed through the Lagrangian 
+Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev): 
 \begin{equation}
-\mathcal{L}_Y(x)=-\sqrt{2}\sum_{l_1,l_2}\bar{\psi}_{l_1L}(x)Y_{l_1l_2}l'_{2R}(x)\phi(c)+h.c.
+\label{eq:ElectronLag}
+\mathcal{L}_Y^e(x)=-g_e(\bar{l}_{eL}\phi e_R+\bar{e}_R\phi l_{eL})
 \end{equation}
 where
 \begin{equation}
-\psi_{lL}(x)=\begin{bmatrix}\nu'_{lL}(x)\\ l'_L(x) \end{bmatrix}\quad(l=e, \mu, \tau),\qquad
-\phi=\begin{bmatrix}\phi_+(x)\\ \phi_0(x) \end{bmatrix}
+\psi_{lL}(x)=\begin{pmatrix}\nu_{e}(x)\\ e^-(x) \end{pmatrix}_L,\qquad
+\phi=\begin{pmatrix}\phi_+(x)\\ \phi_0(x) \end{pmatrix}
 \end{equation}
-are lepton and Higgs doublets, while $l'_R(x)$ is a right handed lepton singlet field and $Y$ is a $3\times3$ dimensionless complex matrix containing coupling constants %of yukawa interaction??
+are lepton and Higgs doublets, while $e_R(x)$ is the right handed electron singlet field.
+We spontaneously break the symmetry choosing 
+\begin{equation}
+\phi(x)=\begin{pmatrix}0\\ \frac{v+H(x)}{\sqrt{2}}\end{pmatrix}
+\end{equation}
+with $v=(\sqrt{2}G_F)^{-1/2}\simeq246GeV$ which is the vev of the Higgs field.
+Lagrangian (\ref{eq:ElectronLag}) then becomes
+\begin{equation}
+\mathcal{L}_Y^e(x)=-\frac{g_e}{\sqrt{2}}v(\bar{e}_Le_R+\bar{e}_Re_L)--\frac{g_e}{\sqrt{2}}(\bar{e}_Le_R+\bar{e}_Re_L)H(x)
+\end{equation}
+Here we can make the identification 
+\begin{equation}
+m_e=\frac{g_ev}{\sqrt{2}}
+\end{equation}
+which gives as the electron mass.
+
+For neutrinos in principle the same mechanism is valid, so that we start from the Lagrangian
+\begin{equation}
+\mathcal{L}_Y^{\nu}(x)=-g_{\nu_e}(\bar{l}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C l_{eL})
+\end{equation}
+where
+\begin{equation}
+\phi_C=i\tau_2\phi*=\begin{pmatrix}\bar{\phi}^0 \\ -\phi^-\end{pmatrix}
+\end{equation}
+is the charge conjugated field.
 
 \subsection{Majorana neutrinos}
 
