@@ -155,7 +155,7 @@ For Majorana neutrinos instead L is not conserved and it's not possible to disti
 Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev): 
 \begin{equation}
 \label{eq:ElectronLag}
-\mathcal{L}_Y^e(x)=-g_e(\bar{l}_{eL}\phi e_R+\bar{e}_R\phi l_{eL})
+\mathcal{L}_Y^e(x)=-g_e(\bar{l}_{eL}\phi e_R+\bar{e}_R\phi l_{eL}) %aggiungi equazione con psi !!
 \end{equation}
 where
 \begin{equation}
@@ -231,9 +231,67 @@ It is straightforward to see that the above mass term is not invariant under a g
 corresponding to non conservation  of lepton number L.
 Considering all neutrino flavors the Majorana mass term has the form
 \begin{equation}
+\label{eq:MajLag}
 \mathcal{L}^M=-\frac{1}{2}\sum_{l',l}\bar{\nu}_{l'L}M_{l',l}^M\nu_{lL}^c+h.c.
 \end{equation}
-where $M^M$ is a complex, $3\times3$ matrix. 
+where $M^M$ is a complex, $3\times3$ matrix. It can be diagonalized by the transformation $M^M=UmU^T$ with $UU^{\dagger}=1$ and $m_{ik}=m_i\delta_{ik},\quad m_i>0$.
+Lagrangian (\ref{eq:MajLag}) thus becomes
+\begin{equation}
+\mathcal{L}^M=-\frac{1}{2}\sum_{i=1}^3m_i\bar{\nu}_i\nu_i
+\end{equation}
+where $\nu_i$ are mass eigenstates with eigenvalues $m_i$.
+\begin{equation}
+\nu_i=\sum_lU_{il}^{\dagger}\nu_{lL}+\sum_l\bigl(U_{il}^{\dagger}\nu_lL\bigr)^c
+\end{equation}
+The flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. The matrix \emph{U} is called PMNS matrix.
+
+\subsection{Weinberg effective Lagrangian}
+Since we are dealing with $\nu_{lL}$ field instead of the Dirac spinor $\nu_l$ it is not possible to generate Majorana masses through the usual coupling with Higgs field and the subsequent symmetry breaking. 
+One way to proceed is through the $SU_L(2)\times U_Y(1)$ invariant
+\begin{equation}
+\label{eq:LorInv}
+(\phi_C^{\dagger}\psi_{lL})\qquad(l=e, \mu, \tau)
+\end{equation}
+which after spontaneous symmetry breaking assumes the form
+\begin{equation}
+(\phi_C^{\dagger}\psi_{lL})_{SSB}=\frac{v}{\sqrt{2}}\nu'_{lL}
+\end{equation}
+From (\ref{eq:LorInv}) the only possible effective Lagrangian which generates neutrino masses is
+\begin{equation}
+\label{eq:EffLag}
+\mathcal{L}_{eff}=\frac{1}{\Lambda}\sum_{l',l}(\phi_C^{\dagger}\psi_{l'L})X'_{l'l}(\phi_C^{\dagger}\psi_{lL})^c+h.c.
+\end{equation}
+where $X'$ is a symmetrical, non diagonal matrix.
+The factor $1/\Lambda$ has been introduce since the mass dimension of (\ref{eq:EffLag}) is five while a Lagrangian should have mass dimension four, and indeed $\Lambda$ has dimension\emph{M}.
+It is an important parameter since it can be interpreted as mass scale at which new physics appears.
+
+After SSB Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
+\begin{equation}
+\label{eq:EffMass}
+\mathcal{L}^M=-\frac{v^2}{2\Lambda}\sum_{l',l}\bar{\nu}'_{l'L}X'_{l'l}\nu_{lL}^{'c}+h.c.
+\end{equation}
+in which we can identify the Majorana matrix
+\begin{equation}
+M^M=\frac{v^2}{\Lambda}X.
+\end{equation}
+The matrix \emph{X} can be diagonalized by the unitary matrix \emph{U}: $X=UxU^T$.
+In this case Lagrangian (\ref{eq:EffMass}) becomes
+\begin{equation}
+\mathcal{L}^M=-\frac{1}{2}\sum_{i=1}^3m_1\bar{\nu}_i\nu_i
+\end{equation}
+where
+\begin{equation}
+\nu_i(x)=\nu_i^c(x)=C\bar{\nu}_i^T(x)
+\end{equation}
+is the field of the Majorana neutrino with mass 
+\begin{equation}
+m_i=\frac{v}{\Lambda}(vx_i)
+\end{equation}
+and through a superposition can give neutrino field of definite flavor
+\begin{equation}
+\nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
+\end{equation}
+where \emph{U} is again the PMNS matrix.
 
 \section{Nutrinoless double beta decay}
 \subsection{Theory}
