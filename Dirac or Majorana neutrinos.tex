@@ -274,7 +274,7 @@ in which we can identify the Majorana matrix
 \begin{equation}
 M^M=\frac{v^2}{\Lambda}X.
 \end{equation}
-The matrix \emph{X} can be diagonalized by the unitary matrix \emph{U}: $X=UxU^T$.
+The matrix \emph{X} can be diagonalized by the unitary matrix \emph{U}: $X=UxU^T$. %look carefully to difference between X and X'
 In this case Lagrangian (\ref{eq:EffMass}) becomes
 \begin{equation}
 \mathcal{L}^M=-\frac{1}{2}\sum_{i=1}^3m_1\bar{\nu}_i\nu_i
@@ -285,6 +285,7 @@ where
 \end{equation}
 is the field of the Majorana neutrino with mass 
 \begin{equation}
+\label{eq:neutMass}
 m_i=\frac{v}{\Lambda}(vx_i)
 \end{equation}
 and through a superposition can give neutrino field of definite flavor
@@ -292,6 +293,16 @@ and through a superposition can give neutrino field of definite flavor
 \nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
 \end{equation}
 where \emph{U} is again the PMNS matrix.
+
+From (\ref{eq:neutMass}) we see that neutrino masses are characterized by the two parameters \emph{v} and $\Lambda$; what's more it provides an explanation of the smallness of neutrino mass with respect to other fermions. The suppression is by a factor
+\begin{equation}
+\frac{v}{\Lambda}=\frac{\text{EW scale}}{\text{scale of a new physics}}
+\end{equation}
+which is naturally much smaller than one.
+If we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\times10^{-2}eV$ and $x_3\leq1$ (although parameters $x_i$ are unknown) we obtain the estimate $\Lambda\leq10^{15}GeV$
+
+\subsection{Origin of the Weinberg effective Lagrangian and the seesaw mechanism}
+The Standard Model can be extended to contain \emph{n'} right-handed neutrinos $N_R$
 
 \section{Nutrinoless double beta decay}
 \subsection{Theory}
@@ -342,6 +353,7 @@ the auspices of the Italian Physical Society.
 %pp368-372
 \bibitem{ref:Halzen} \BY{Halzen~F. \atque Martin~A.D.} \TITLE{Quarks and Leptons: An Introductory Course in Modern Particle Physics} 
 (John Wiley \& Sons.) 1984. %pp 338-340
+\bibitem{ref:Bronc} \BY{Broncano~A. , Gavela~M.B. \atque Jenkins~E.} \TITLE{The Effective Lagrangian for the Seesaw Model of Neutrino Mass and Leptogenesis} [hep-ph/0210271].
 \end{thebibliography}
 
 \end{document}
