@@ -302,7 +302,33 @@ which is naturally much smaller than one.
 If we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\times10^{-2}eV$ and $x_3\leq1$ (although parameters $x_i$ are unknown) we obtain the estimate $\Lambda\leq10^{15}GeV$
 
 \subsection{Origin of the Weinberg effective Lagrangian and the seesaw mechanism}
-The Standard Model can be extended to contain \emph{n'} right-handed neutrinos $N_R$
+The Standard Model can be extended to contain \emph{n'} right-handed neutrinos $N_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{N_R}$ , where
+\begin{equation}
+\label{eq:renormLag}
+\mathcal{L}_{N_R}=i\bar{N}_R\sigma^{\mu}\delta_{\mu}N_R-\biggl(\bar{l}_L\phi^cY_{\nu}N_R+\bar{N}_RY_{\nu}^{\dagger}\phi^{c\dagger}l_L\biggr)-\frac{1}{2}(\bar{N}_R^c\mathcal{M}N_R+\bar{N}_R\mathcal{M}^*N_R^c)
+\end{equation}
+It contains  Majorana mass term for right-handed neutrinos, with$\mathcal{M}$ a complex $n'\times n'$ symmetric matrix, and also Yukawa interactions between right-handed neutrino singlets, left-handed lepton doublets and the Higgs boson scalar doublet. Notice that Majorana mass term is not produced through Higgs mechanism and SSB. Working in the basis in which $\mathcal{M}$ is real and diagonal, neutrino mass eigenstates are given by $N_i=N_i^c$. An effective Lagrangian, valid at energies below $\mathcal{M}$, can be constructed by integrating out the heavy Majorana neutrino fields $N_i$ and performing a power series expansion in $1/\mathcal{M}$ of the form
+\begin{equation}
+\mathcal{L}_{eff}=\mathcal{L}_{SM}+\frac{1}{\mathcal{M}}\mathcal{L}^{d=5}+\frac{1}{\mathcal{M}^2}\mathcal{L}^{d=6}+\dots
+\equiv \mathcal{L}_{SM}+\delta\mathcal{L}^{d=5}+\delta\mathcal{L}^{d=6}+\dots
+\end{equation}
+The $\delta\mathcal{L}^{d=5}$ effective Lagrangian for the seesaw model corresponds the Weinberg effective Lagrangian (\ref{eq:EffLag}) so that we can find the relation
+\begin{equation}
+\frac{1}{\Lambda}X'=Y^{*}_{\nu}\frac{1}{\mathcal{M}}Y_{\nu}^{\dagger} %controlla correttezza di forma!!!
+\end{equation}
+This means that the scale of new physics $\Lambda$ is determined by the masses of heavy Majorana fields $N_i$, a furthermore the mass matrix of light neutrinos is given by
+\begin{equation}
+M^M=-\frac{v^2}{2}\biggl(Y^{*}_{\nu}\frac{1}{\mathcal{M}}Y_{\nu}^{\dagger}\biggr)
+\end{equation}
+Writing the complete mass term for $\mathcal{L}_{SM}+\mathcal{L}_{N_R}$ results in 
+\begin{equation}
+\mathcal{L}_{\nu}^M=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}0 M_M\\ M_M^T \mathcal{M}\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
+\end{equation} %modify
+where the mass matrix can be diagonalized to give two Majorana masses $M \text{and} M_M^2/\mathcal{M}$; so that if the right-handed neutrino mass $\mathcal{M}$ is greater than $M_M$, the left-handed neutrino masses...%modify
+This mechanism of generation of Majorana neutrino masses is called type-I seesaw mechanism.
+
+The interaction (\ref{eq:renormLag}) however is not the only way to generate the effective Weinberg Lagrangian. It can also derive from 
+%Most neutrino Majorana masses can be parametrized by the Weinberg operator, but not always. If the models contain particles lighter than the electroweak scale, like light Dirac neutrinos or light sterile fermions.
 
 \section{Nutrinoless double beta decay}
 \subsection{Theory}
@@ -353,7 +379,7 @@ the auspices of the Italian Physical Society.
 %pp368-372
 \bibitem{ref:Halzen} \BY{Halzen~F. \atque Martin~A.D.} \TITLE{Quarks and Leptons: An Introductory Course in Modern Particle Physics} 
 (John Wiley \& Sons.) 1984. %pp 338-340
-\bibitem{ref:Bronc} \BY{Broncano~A. , Gavela~M.B. \atque Jenkins~E.} \TITLE{The Effective Lagrangian for the Seesaw Model of Neutrino Mass and Leptogenesis} [hep-ph/0210271].
+\bibitem{ref:Bronc} \BY{Broncano~A. , Gavela~M.B. \atque Jenkins~E.} \TITLE{The Effective Lagrangian for the Seesaw Model of Neutrino Mass and Leptogenesis}, (2006)  [hep-ph/0210271].
 \end{thebibliography}
 
 \end{document}
