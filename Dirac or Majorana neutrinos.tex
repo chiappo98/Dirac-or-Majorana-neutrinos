@@ -281,6 +281,7 @@ In this case Lagrangian (\ref{eq:EffMass}) becomes
 \end{equation}
 where
 \begin{equation}
+\label{eq:nuC}
 \nu_i(x)=\nu_i^c(x)=C\bar{\nu}_i^T(x)
 \end{equation}
 is the field of the Majorana neutrino with mass 
@@ -290,6 +291,7 @@ m_{iL}=\frac{v}{\Lambda}(vx_i)
 \end{equation}
 and through a superposition can give neutrino field of definite flavor
 \begin{equation}
+\label{eq:nuMix}
 \nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
 \end{equation}
 where \emph{U} is again the PMNS matrix.
@@ -351,8 +353,72 @@ It is a second order process and has been observed in even-even nuclei in which 
 \begin{equation}
 (A, Z)\rightarrow(A, Z+2)+2e^-
 \end{equation}
+This process could be observed whether other possible decay channels are forbidden, and several ongoing experiments nowadays are trying to search for it. This will prove the existence of Majorana neutrinos.
 
 \subsection{Theory}
+The theory on $0\nu\beta\beta$-decay is based on the assumption that the CC interaction is the SM interaction
+\begin{equation}
+\mathcal{L}^{CC}=-\frac{g}{2\sqrt{2}}j_{\alpha}^{CC}W^{\alpha}+h.c.
+\end{equation}
+with
+\begin{equation}
+j_{\alpha}^{CC}=2\bar{\nu}_{lL}\gamma_{\alpha}l_L+j_{\alpha}^{CCquark}
+\end{equation}
+where $j_{\alpha}^{CCquark}$ is the quark charged current, $W^{\alpha}$ is the charged vector bosons field and $g$ is the constatnt of electroweak interaction. The flavor neutrino field $\nu_{lL}$ is given by the mixing relation (\ref{eq:nuMix}) of Majorana neutrinos (\ref{eq:nuC}).
+
+The effective Hamiltonian of $\beta$-decay is 
+\begin{equation}
+\mathcal{H}=\frac{G_F}{\sqrt{2}}2\bar{e}_L\gamma_{\alpha}\nu_{eL}j^{\alpha}+h.c.
+\end{equation}
+The matrix element for neutrinoless double $\beta$-decay has to be calculated in the second order of the perturbation theory in $G_F$. Going directly to the result, the total decay rate for this process is
+\begin{equation}
+\Gamma^{0\nu}=\frac{ln(2)}{T^{0\nu}_{1/2}}=|m_{\beta\beta}|^2|M^{0\nu}|^2G^{0\nu}(Q,Z)
+\end{equation}
+where the matrix element is given by the product of the effective Majorana mass $m_{\beta\beta}$ and the nuclear matrix element $M^{0\nu}$, and $G^{0\nu}(Q,Z)$ is the phase space factor, which includes effects of Coulomb interaction between electrons and the daughter nucleus. For a complete calculation of the decay rate see~\cite{ref:Bil}.
+
+A particular focus as to be set on the effective Majorana mass
+\begin{equation}
+m_{\beta\beta}=sum_{i=1}^3U_{ek}^2m_k
+\end{equation}
+since it depends on neutrino masses (still unknown) and on the matrix elements of the PMNS matrix, which are extracted from neutrino oscillation experiments.
+From studying solar neutrinos we get $\Delta m_S^2\equiv\Delta m_{12}^2>0$, while from atmospheric neutrino experiments $\Delta m_A^2$ is derived.
+At this point however there a re two possibilities:
+\begin{enumerate}
+\item Normal ordering (NO)
+\begin{equation}
+m_3>m_2>m_1
+\end{equation}
+\item Inverted ordering (IO)
+\begin{equation}
+m_2>m_1>m_3
+\end{equation}
+\end{enumerate}
+In the first case (NO) $\Delta m_A^2\equiv\Delta m_{23}^2$ and
+\begin{equation}
+m_2=\sqrt{m_1^2+\Delta m_S^2} \qquad m_3=\sqrt{m_1^2+\Delta m_S^2+\Delta m_A^2}
+\end{equation}
+while for inverted ordering $\Delta m_A^2\equiv\Delta m_{13}^2$ and
+\begin{equation}
+m_1=\sqrt{m_3^2+\Delta m_A^2} \qquad m_2=\sqrt{m_3^2+\Delta m_S^2+\Delta m_A^2}
+\end{equation}
+
+For what concerns the PMNS matrix, if we are dealing with Dirac neutrinos it is characterized by three mixing angles $\theta_{12}, \theta_{23}, \theta_{13}$ and one phase $\delta$. In the standard parametrization it has the form
+\begin{equation}
+U^D=\begin{pmatrix}c_{13}c_{12}&c_{13}s_{12}&s_{13}e^{-i\delta}\\-c_{23}s_{12}-s_{23}c_{12}s_{13}e^{i\delta}&c_{23}c_{12}-s_{23}s_{12}s_{13}e^{i\delta}&c_{13}s_{23}\\s_{23}s_{12}-c_{23}c_{12}s_{13}e^{i\delta}&-s_{23}c_{12}-c_{23}s_{12}s_{13}e^{i\delta}&c_{13}c_{23}\end{pmatrix}
+\end{equation}
+where $c_{ij}\equiv cos(\theta_{ij})$ and $s_{ij}\equiv sin(\theta_{ij})$.
+
+If instead neutrinos are Majorana particles, two additional phases $\alpha_1$ and $\alpha_2$ enter in the mixing matrix
+\begin{equation}
+U^M=U^DS^M(\alpha)
+\end{equation}
+where
+\begin{equation}
+s^M(\alpha)=\begin{pmatrix}e^{i\alpha_1}&0&0\\0&e^{i\alpha_2}&0\\0&0&1\end{pmatrix}
+\end{equation}
+
+
+
 \subsection{Experiments}
 
 
@@ -401,7 +467,9 @@ the auspices of the Italian Physical Society.
 \bibitem{ref:Halzen} \BY{Halzen~F. \atque Martin~A.D.} \TITLE{Quarks and Leptons: An Introductory Course in Modern Particle Physics} 
 (John Wiley \& Sons.) 1984. %pp 338-340
 \bibitem{ref:Bronc} \BY{Broncano~A. , Gavela~M.B. \atque Jenkins~E.} \TITLE{The Effective Lagrangian for the Seesaw Model of Neutrino Mass and Leptogenesis}, (2006)  [hep-ph/0210271].
-\bibitem{ref:Juji} \BY{Fujikawa~K.}, \IN{Eur. Phys. J. C}{80}{2020}{285}.
+\bibitem{ref:Juji} \BY{Fujikawa~K.} \IN{Eur. Phys. J. C}{80}{2020}{285}.
+\bibitem{ref:Bil} \BY{Bilenky~S.M.} \TITLE{Neutrinos: Majorana or Dirac?}, (2020) [arXiv:2008.02110v1].
+
 \end{thebibliography}
 
 \end{document}
