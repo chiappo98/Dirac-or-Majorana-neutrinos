@@ -49,8 +49,7 @@ This energy corresponds only to the maximum electron energy of \emph{Figure}~\re
 The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
 Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
 
-Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons %~\ref{cottingham} (maybe inside caption)
-:
+Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons, as shown in Table~\ref{tab:classification}. %~\ref{cottingham} (maybe inside caption)
 \begin{table}[H]
 \begin{tabular}{cccc}
 \toprule
@@ -145,21 +144,24 @@ where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose the 
 The latter have to be interpreted as positive energy antiparticle states.
 The total Lagrangian density which describes weak interactions of leptons is determined by the requirement of $U_Y(1)\times SU_L(2)$ local gauge symmetry.
 Generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
-This mechanism could in principle be applied also to neutrinos, however since values of neutrino masses are many order of magnitude smaller than those of other fermions it is very unlikely they have a common SM Higgs origin.
+This mechanism could in principle be applied also to neutrinos, however since the Standard Model does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
+
+In order to generate neutrino masses then we have to go beyond the Standard Model, adding an arbitrary number of sterile neutrinos.
+One possible solution is to introduce three new sterile (right-handed) neutrinos such that neutrinos acquire mass through the usual Yukawa mechanism.  However, since values of neutrino masses are many order of magnitude smaller than those of other fermions it is very unlikely they have a common SM Higgs origin.
 Another possibility is the method of the effective Lagrangian which, after SSB generates Majorana neutrinos with definite masses and suppression via seesaw mechanism of neutrino masses with respect to SM masses of leptons and quarks.
 
 If neutrinos are Dirac particles total lepton number \emph{L} is conserved, and neutrino $\nu_i$ and antineutrino $\bar{\nu}_i$ have lepton number respectively  $L(\nu_i)=+1$ and $L(\bar{\nu}_i)=-1$.
 For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos through any quantum number.
 
 \subsection{Higgs mechanism for fermion masses}
-Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev): 
+Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev) $v$: 
 \begin{equation}
 \label{eq:ElectronLag}
-\mathcal{L}_Y^e(x)=-g_e(\bar{l}_{eL}\phi e_R+\bar{e}_R\phi l_{eL}) %aggiungi equazione con psi !!
+\mathcal{L}_Y^e(x)=-g_e(\bar{\psi}_{eL}\phi e_R+\bar{e}_R\phi \psi_{eL}) 
 \end{equation}
 where
 \begin{equation}
-\psi_{lL}(x)=\begin{pmatrix}\nu_{e}(x)\\ e^-(x) \end{pmatrix}_L,\qquad
+\psi_{eL}(x)=\begin{pmatrix}\nu_{e}(x)\\ e^-(x) \end{pmatrix}_L,\qquad
 \phi=\begin{pmatrix}\phi_+(x)\\ \phi_0(x) \end{pmatrix}
 \end{equation}
 are lepton and Higgs doublets, while $e_R(x)$ is the right handed electron singlet field.
@@ -177,7 +179,7 @@ Here we can make the identification $m_e=g_ev/\sqrt{2}$ which gives as the elect
 For neutrinos in principle the same mechanism is valid, so that we start from the Lagrangian
 \begin{equation}
 \label{eq:nuLag}
-\mathcal{L}_Y^{\nu_e}(x)=-g_{\nu_e}(\bar{l}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C l_{eL})
+\mathcal{L}_Y^{\nu_e}(x)=-g_{\nu_e}(\bar{\psi}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C \psi_{eL})
 \end{equation}
 where
 \begin{equation}
@@ -188,9 +190,12 @@ is the charge conjugated field. Through SSB we obtain $\phi_C(x)=\begin{pmatrix}
 \label{eq:nuMassLag}
 \mathcal{L}_Y^{\nu_e}(x)=-\frac{g_{\nu_e}}{\sqrt{2}}v(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})-\frac{g_{\nu_e}}{\sqrt{2}}(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})H(x)
 \end{equation}
-We finally obtained a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$.
+so that finally we obtained a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$
+\begin{equation}
+\mathcal{L}_{mass}^{\nu_e}=-m_{\nu_e}\bar{\nu}_{eL}\nu_{eR}+h.c.
+\end{equation}
 
-It is easy to check that the Lagrangian of the Standard Model with the Yukawa interaction~\ref{eq:nuMassLag} is invariant under the global transformation
+It is easy to check that the Standard Model Lagrangian with Yukawa interaction (\ref{eq:nuMassLag}) is invariant under the global transformation
 \[
 \nu_{eL}(x)\rightarrow e^{i\theta}\nu_{eL}(x),\quad\nu_{eR}(x)\rightarrow e^{i\theta}\nu_{eR}(x),
 \quad e_L(x)\rightarrow e^{i\theta}e_L(x),\quad e_R(x)\rightarrow e^{i\theta}e_R(x)
@@ -201,7 +206,7 @@ Although this mechanism of generation of neutrino masses is legitimate, if we lo
 \[
 2\cdot10^{-13}\leq g_{\nu_e}\leq10^{-12} \quad \text{while}\quad g_t\simeq7\cdot10^{-1}, g_b\simeq2\cdot10^{-2}, g_{\tau}\simeq7\cdot10^{-3}
 \]
-It looks extremely implausible that they have a common origin. This is also true if we think about smallness of neutrino masses, even if their absolute values are still unknown from neutrino oscillation and cosmological data the mass of the heaviest neutrino has been estimated to be
+It looks extremely implausible that they have a common origin. This is also true if we think about smallness of neutrino masses: even if their absolute values are still unknown from neutrino oscillation and cosmological data the mass of the heaviest neutrino has been estimated to be
 \[
 5\cdot10^{-2}eV\simeq\biggl(\sqrt{\Delta m^2_A}\biggr)\leq m_3\leq\biggl(\frac{1}{3}\sum_im_i\biggr)\simeq3\cdot10^{-1}eV
 \]
@@ -209,44 +214,48 @@ It looks extremely implausible that they have a common origin. This is also true
 where $\Delta m^2_A$ is the atmosphere neutrino mass-squared difference.
 
 \subsection{Majorana neutrinos}
-The Dirac mechanism for neutrino masses is not a completely exhaustive model which further requires the introduction of sterile %is it correct??
-right handed neutrinos.
-A new theory has been developed trying to build a more natural model for neutrino masses generation beyond the Standard Model. To be precise there is not a single theory but many. One of the most popular is the Weinberg effective Lagrangian: it allows the introduction of neutrino masses using only left-handed (Majorana) neutrino fields.
-A consequence of this model is that the total lepton number L is not conserved, but apart from this all the results about neutrino oscillation and mixing coincide with those from SM predictions.
+As we saw, Dirac mechanism for neutrino masses is not a completely exhaustive model.
+A new beyond-the-Standard Model theory has been developed trying to account for neutrino masses generation in a more natural way. To be precise there is not a single theory but many. %\cite??
+One of the most popular is the Weinberg effective Lagrangian: it allows the introduction of neutrino masses using only left-handed (Majorana) neutrino fields.
+The advantage of this model is that it minimizes the number of degrees of freedom required. 
+Dirac massive particles have four degrees of freedom ($\nu_{eL}$, $\nu_{eR}$ and their antiparticles), while for Majorana fermions they would be only two: $\nu_{eL}$ and $\nu_{eR}$. 
 
-In Dirac massive particles there are four degrees of freedom ($\nu_{eL}$, $\nu_{eR}$ and their antiparticles), while for Majorana fermions they would be only two: $\nu_{eL}$ and $\nu_{eR}$. Furthermore, since RH neutrinos are $U(1)$ and $SU(2)$ singlets, they can be easily dropped altogether.
-A Lorentz invariant mass term however requires a product of left-handed and right-handed components; this is achieved by the fact that
-the charge conjugated field
+In order to build a Lorentz invariant mass term, a product of left-handed and right-handed components is required; this is achieved by the fact that the charge conjugated field
 \begin{equation}
 \nu_{eL}^c=C\bar{\nu}_{eL}^T
 \end{equation}
-is right-handed. The Majorana mass term may be written as
+is right-handed. A generic Majorana mass term may be written as
 \begin{equation}
--\frac{1}{2}m_L\bar{\nu}_{eL}\nu_{eL}^c+h.c.
+-\frac{1}{2}m_M\bar{\nu}_{eL}\nu_{eL}^c+h.c.
 \end{equation}
 It is straightforward to see that the above mass term is not invariant under a global $U(1)$ transformation
 \begin{equation}
 \nu_{eL}\rightarrow e^{-i\theta}\nu_{eL}
 \end{equation}
-corresponding to non conservation  of lepton number L.
+corresponding to the non conservation of lepton number L.
 Considering all neutrino flavors the Majorana mass term has the form
 \begin{equation}
 \label{eq:MajLag}
-\mathcal{L}^M=-\frac{1}{2}\sum_{l',l}\bar{\nu}_{l'L}M_{l',l}^L\nu_{lL}^c+h.c.
+\mathcal{L}^M=-\frac{1}{2}\sum_{l',l}\bar{\nu}_{l'L}M_{l',l}^M\nu_{lL}^c+h.c.
 \end{equation}
-where $M^M$ is a complex, $3\times3$ matrix. It can be diagonalized by the transformation $M^M=UmU^T$ with $UU^{\dagger}=1$ and $m_{ik}=m_i\delta_{ik},\quad m_i>0$.
+where $M^M$ is a complex $3\times3$ matrix. It can be diagonalized by the transformation $M^M=UmU^T$, with $UU^{\dagger}=1$ and  $m_{ik}=m_i\delta_{ik},\quad m_i>0$.
 Lagrangian (\ref{eq:MajLag}) thus becomes
 \begin{equation}
 \mathcal{L}^M=-\frac{1}{2}\sum_{i=1}^3m_i\bar{\nu}_i\nu_i
 \end{equation}
 where $\nu_i$ are mass eigenstates with eigenvalues $m_i$.
 \begin{equation}
-\nu_i=\sum_lU_{il}^{\dagger}\nu_{lL}+\sum_l\bigl(U_{il}^{\dagger}\nu_lL\bigr)^c
+\nu_i=\sum_lU_{il}^{\dagger}\nu_{lL}+\sum_l\bigl(U_{il}^{\dagger}\nu_{lL}\bigr)^c
 \end{equation}
-The flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. The matrix \emph{U} is called PMNS matrix.
+It's straightforward to verify that field $\nu_i$ satisfies Majorana condition $\nu_i=\nu_i^c$, and that the flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. 
+\begin{equation}
+\nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
+\end{equation}
+The matrix \emph{U} is called PMNS matrix.
 
 \subsection{Weinberg effective Lagrangian}
-Since we are dealing with $\nu_{lL}$ field instead of the Dirac spinor $\nu_l$ it is not possible to generate Majorana masses through the usual coupling with Higgs field and the subsequent symmetry breaking. 
+In order to generate a Majorana mass term like (\ref{eq:MajLag}) Weinberg proposed a beyond the SM mechanism based on the effective Lagrangian approach.
+Since we are dealing only with left-handed neutrino field $\nu_{lL}$ instead of the lepton doublet $\psi_lL$, it is not possible to generate Majorana masses through the usual coupling with the Higgs field and the subsequent symmetry breaking. 
 One way to proceed is through the $SU_L(2)\times U_Y(1)$ invariant
 \begin{equation}
 \label{eq:LorInv}
@@ -262,8 +271,8 @@ From (\ref{eq:LorInv}) the only possible effective Lagrangian which generates ne
 \mathcal{L}_{eff}=\frac{1}{\Lambda}\sum_{l',l}(\phi_C^{\dagger}\psi_{l'L})X'_{l'l}(\phi_C^{\dagger}\psi_{lL})^c+h.c.
 \end{equation}
 where $X'$ is a symmetrical, non diagonal matrix.
-The factor $1/\Lambda$ has been introduce since the mass dimension of (\ref{eq:EffLag}) is five while a Lagrangian should have mass dimension four, and indeed $\Lambda$ has dimension\emph{M}.
-It is an important parameter since it can be interpreted as mass scale at which new physics appears.
+The factor $1/\Lambda$ has been introduce since the mass dimension of (\ref{eq:EffLag}) is five, while a Lagrangian should have mass dimension four, and indeed $\Lambda$ has dimension \emph{M}.
+The parameter $\Lambda$ is important since it can be interpreted as the mass scale at which new physics appears.
 
 After SSB Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
 \begin{equation}
@@ -272,7 +281,7 @@ After SSB Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
 \end{equation}
 in which we can identify the Majorana matrix
 \begin{equation}
-M_L=\frac{v^2}{\Lambda}X. %is it M_L or M_2
+M_M=\frac{v^2}{\Lambda}X. 
 \end{equation}
 The matrix \emph{X} can be diagonalized by the unitary matrix \emph{U}: $X=UxU^T$. %look carefully to difference between X and X'
 In this case Lagrangian (\ref{eq:EffMass}) becomes
@@ -284,19 +293,13 @@ where
 \label{eq:nuC}
 \nu_i(x)=\nu_i^c(x)=C\bar{\nu}_i^T(x)
 \end{equation}
-is the field of the Majorana neutrino with mass 
+is the field of  Majorana neutrino with mass 
 \begin{equation}
 \label{eq:neutMass}
-m_{iL}=\frac{v}{\Lambda}(vx_i)
-\end{equation}
-and through a superposition can give neutrino field of definite flavor
-\begin{equation}
-\label{eq:nuMix}
-\nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
-\end{equation}
-where \emph{U} is again the PMNS matrix.
+m_{i}=\frac{v}{\Lambda}(vx_i)
+\end{equation}.
 
-From (\ref{eq:neutMass}) we see that neutrino masses are characterized by the two parameters \emph{v} and $\Lambda$; what's more it provides an explanation of the smallness of neutrino mass with respect to other fermions. The suppression is by a factor
+From (\ref{eq:neutMass}) we see that neutrino masses are characterized by the two parameters \emph{v} and $\Lambda$: this can  provides an explanation for the smallness of neutrino masses with respect to other fermions. The suppression is by a factor
 \begin{equation}
 \frac{v}{\Lambda}=\frac{\text{EW scale}}{\text{scale of a new physics}}
 \end{equation}
@@ -304,32 +307,28 @@ which is naturally much smaller than one.
 If we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\times10^{-2}eV$ and $x_3\leq1$ (although parameters $x_i$ are unknown) we obtain the estimate $\Lambda\leq10^{15}GeV$
 
 \subsection{Origin of the Weinberg effective Lagrangian and the seesaw mechanism}
-The Standard Model for three generations of neutrinos can be extended to contain three right-handed neutrinos $\nu_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{\nu_R}$ 
+The Standard Model for three generations of neutrinos can be extended to contain \emph{m} right-handed neutrinos $\nu_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{\nu_R}$ 
 \begin{equation}
 \label{eq:renormLag}
 \mathcal{L}=i\bar{\nu}_L\sigma^{\mu}\partial_{\mu}\nu_L+i\bar{\nu}_R\sigma^{\mu}\partial_{\mu}\nu_R-\bar{\nu}_LM_D\nu_R-\frac{1}{2}\bar{\nu}^c_LM_L\nu_L-\frac{1}{2}\bar{\nu}_R^cM_R\nu_R+h.c.
 \end{equation}
-It contains a $3\times3$ Dirac mass matrix $M_D$ together with $3\times3$ Majorana mass matrices $M_L$ and $M_R$ for left-handed and right-handed neutrinos respectively. Notice that Majorana mass terms are not produced through Higgs mechanism and SSB. Working in the basis in which $M_R$ is real and diagonal, neutrino mass eigenstates are given by $\nu_{iR}=\nu_{iR}^c$. 
-Writing the complete mass term for three neutrino generations results in 
+It contains a $m\times3$ complex Dirac mass matrix $M_D$ together with Majorana mass matrices $M_L$ and $M_R$ for left-handed and right-handed neutrinos, which are respectively $m\times m$ and $3\times3$ symmetric matrices. 
+Notice that Majorana mass terms are not produced through Higgs mechanism and SSB.
+Writing the complete mass term for $3+m$ neutrino generations results in 
 \begin{equation}
-\mathcal{L}_{mass}=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}M_L & M_D\\ M_D^T & M_R\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
+\mathcal{L}_{mass}=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}M_L & M_D\\ M_D^T & M_N\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
 \end{equation}
-where the mass matrix can be diagonalized by a $6\times6$ unitary transformation $U$ to give 
+where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. In case of type-I seesaw mechanism the choice is $M_L=0$. The mass matrix can be diagonalized by unitary matrix $U$ of dimension $3+m$ to give 
 \begin{equation}
-U^T\begin{pmatrix}M_L & M_D\\ M_D^T & M_R\end{pmatrix}U=\begin{pmatrix}M_1 & 0 \\ 0 & -M_2\end{pmatrix}
+U^T\begin{pmatrix}0 & M_D\\ M_D^T & M_R\end{pmatrix}U=\begin{pmatrix}M_l & 0 \\ 0 & M_h\end{pmatrix}
 \end{equation}
-$M_1$ and $M_2$ are $3\times3$ real diagonal matrices. In case of type-I seesaw mechanism the choice is $M_L=0$ and $M_D\ll M_R$.
-Considering only one neutrino generation the total mass matrix becomes 
+$M_l$ and $M_h$ are $3\times3$ and $m\times m$ real diagonal matrices. If the mass eigenvalues of $M_R$ are much higher than the scale of electroweak symmetry breaking \emph{v}, we obtain three light neutrinos $\nu_l$ and \emph{m} heavy neutrinos, \emph{N}.
 \begin{equation}
-M=\begin{pmatrix}m_L & m_D\\ m_D^T & m_R\end{pmatrix}
+\mathcal{L}_{mass}=-\frac{1}{2}\bar{\nu}_lM^l\nu_l-\frac{1}{2}\bar{N}M^hN
 \end{equation}
-where $m_L, m_R$ and $m_D$ are all real parameters. Assuming $m_L=0$ and $m_D\ll m_R$ we get two Majorana masses %true???
-\begin{equation}
-m_1\approx m_R \qquad m_2\approx -m^2_D/m_R
-\end{equation}
-that are, one heavy right-handed neutrino of mass $m_1$ and a light left-handed neutrino of mass $m_2$. In this are obtained values for LH neutrino masses compatible with experimental bounds. Notice that this does not imply that $m_D$ has to be small compared to the electroweak scale, and thus the unnaturally small coupling $Y^{\nu}$ is avoided.
+In this way values for LH neutrino masses compatible with experimental bounds are obtained. Notice that this does not imply that $M_D$ has to be small compared to the electroweak scale, and thus the unnaturally small coupling $Y^{\nu}$ is avoided.
 
-Values of neutrino masses we just derived can be obtained through an effective Lagrangian, valid at energies below the mass scale $M_R$. This Lagrangian is constructed by integrating out the heavy Majorana neutrino fields $\nu_{iR}$ and performing a power series expansion in $1/M_R$ of the form
+Weinberg effective Lagrangian arises naturally from Lagrangian (\ref{eq:renormLag}) by integrating out the heavy Majorana neutrino fields $\nu_{iR}$ and performing a power series expansion in $1/M_R$ of the form
 \begin{equation}
 \mathcal{L}_{eff}=\mathcal{L}_{SM}+\frac{1}{M_R}\mathcal{L}^{d=5}+\frac{1}{M_R^2}\mathcal{L}^{d=6}+\dots
 \equiv \mathcal{L}_{SM}+\delta\mathcal{L}^{d=5}+\delta\mathcal{L}^{d=6}+\dots
@@ -338,12 +337,19 @@ Here the $\delta\mathcal{L}^{d=5}$ effective Lagrangian corresponds to the Weinb
 \begin{equation}
 \frac{1}{\Lambda}X'=Y^{*}_{\nu}\frac{1}{M_R}Y_{\nu}^{\dagger} %controlla correttezza di forma!!!
 \end{equation}
-This means that the scale of new physics $\Lambda$ is defined by the masses of heavy Majorana fields $\nu_{iR}$, and furthermore the mass matrix of light neutrinos is given by
+This means that the scale of new physics $\Lambda$ is defined by the masses of heavy Majorana fields $N$, and furthermore the mass matrix of light neutrinos is given by
 \begin{equation}
-M_2=-\frac{v^2}{2}\biggl(Y^{*}_{\nu}\frac{1}{M_R}Y_{\nu}^{\dagger}\biggr) %is it M_2 or M_L
+M_l=-\frac{v^2}{2}\biggl(Y^{*}_{\nu}\frac{1}{M_R}Y_{\nu}^{\dagger}\biggr) 
 \end{equation}
+The SM is an effective theory which properly describes the physics at energies below $M_R$
 
+\subsection{Light sterile neutrinos}
+It could be that some $n_s<m$ eigenvalues of the Majorana matrix $M_R$ are not higher than the electroweak scale; in this case there will be additional $n_s$ light states and we will have $3+n_s$ light neutrinos.
+Indications in favor of sterile neutrinos were obtained in different short baseline experiments, such as LSND %cite 
+and MiniBoone. %cite
+Indeed existing data can be explained by neutrino oscillations if we assume the existence of three flavor neutrinos $\nu_e, \nu_{\mu}, \nu_{\tau}$ and one sterile neutrino $\nu_s$, given by the mixture of four massive neutrinos (the so called 3+1 scheme).
 
+\subsection{}
 Interaction (\ref{eq:renormLag}) however is not the only way to generate the effective Weinberg Lagrangian. It can also derive from 
 %Most neutrino Majorana masses can be parametrized by the Weinberg operator, but not always. If the models contain particles lighter than the electroweak scale, like light Dirac neutrinos or light sterile fermions.
 
@@ -469,7 +475,7 @@ the auspices of the Italian Physical Society.
 \bibitem{ref:Bronc} \BY{Broncano~A. , Gavela~M.B. \atque Jenkins~E.} \TITLE{The Effective Lagrangian for the Seesaw Model of Neutrino Mass and Leptogenesis}, (2006)  [hep-ph/0210271].
 \bibitem{ref:Juji} \BY{Fujikawa~K.} \IN{Eur. Phys. J. C}{80}{2020}{285}.
 \bibitem{ref:Bil} \BY{Bilenky~S.M.} \TITLE{Neutrinos: Majorana or Dirac?}, (2020) [arXiv:2008.02110v1].
-
+\bibitem{ref:pdg} \BY{Zyla~P.A. \emph{et al.}} (Particle Data Group), \IN{Prog. Theor. Exp. Phys.}{2020} {083C01} (2020).
 \end{thebibliography}
 
 \end{document}
