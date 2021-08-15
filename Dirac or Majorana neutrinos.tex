@@ -8,6 +8,8 @@
 \usepackage{booktabs}
 \usepackage{mathrsfs}
 \usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{mhchem}
 
 \begin{document}
 
@@ -357,11 +359,24 @@ Interaction (\ref{eq:renormLag}) however is not the only way to generate the eff
 
 \section{Nutrinoless double beta decay}
 Double beta decay ($2\nu\beta\beta$) is the simultaneous beta decay of two neutrons in a nucleus: $(A, Z)\rightarrow(A, Z+2)+2e^-+2\bar{\nu}_e$.
-It is a second order process and has been observed in even-even nuclei in which single beta decay is energetically forbidden. As we saw, some models that extend the SM predict the existence of a \emph{neutrinoless} double beta decay ($0\nu\beta\beta$)
+It is a second order process that has been observed in even-even nuclei in which single beta decay is energetically forbidden. As we saw, some models that extend the SM predict the existence of a \emph{neutrinoless} double beta decay ($0\nu\beta\beta$)
 \begin{equation}
 (A, Z)\rightarrow(A, Z+2)+2e^-
 \end{equation}
-This process could be observed whether other possible decay channels are forbidden, and several ongoing experiments nowadays are trying to search for it. This will prove the existence of Majorana neutrinos.
+This process could be observed whether other possible decay channels are forbidden, and several ongoing experiments nowadays are trying to search for it. This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum.
+\begin{wrapfigure}{l}
+{0.35\textwidth}
+\includegraphics[width=0.3\textwidth]{Neutrinoless.png}
+\caption{$0\nu\beta\beta$-decay.}
+\vspace{-10pt}
+\end{wrapfigure}
+This process has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Fig.~\ref{fig:Nspectrum}.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{Nspectrum.png}
+\caption{Energy spectra for double $\beta$-decay and neutrinoless double $\beta$-decay.}
+\label{fig:Nspectrum}
+\end{figure}
 
 \subsection{Theory}
 The theory on $0\nu\beta\beta$-decay is based on the assumption that the CC interaction is the SM interaction
@@ -483,17 +498,21 @@ In the following section highlights on some of the ongoing %or past?
 experiments on neutrinoless double beta decay are presented.
 
 \subsection{Experiments}
+The search for $0\nu\beta\beta$-decay is carried out through several large scale experiments.General requirements for the employed detectors are high purity, low background and huge dimensions of the samples, because of the small cross-section of the process.
+Experiments we are going to quickly discuss use three different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA) and Tellurium-130 (CUORE and Cupid-0).
 
+\subsubsection{EXO}
+The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) at a depth of about \SI{1600}{m} water equivalent near Carlsbad in New Mexico (USA).
+The current experiment EXO-200 consists of \SI{200}{Kg} of liquid Xenon (LXe) enriched to 80.6\% in \ce{^{136}Xe} isotope. 
+The LXe fills a TPC vessel, so that when a charged particle traverses it, a signal is produced through ionization. The ions drift towards the wire grids, which provide a 2D location. Scintillation light is  also produced. The third coordinate is reconstructed from the time difference between light signal and ionization signal. The amount of light is proportional to the event's energy.
 
-\subsection{Mathematics}
-Here is a lettered array~(\ref{e.all}), with eqs.~(\ref{e.house})
-and~(\ref{e.phi}):
-\begin{eqnletter}
- \label{e.all}
- \drm x_\sy{F} & = & 1.2\cdot10^3\un{cm}, \qquad
-                     \tx{where\ } \sy{F} = \tx{Fermi}    \label{e.house}\\
- \phi_i        & = & i\pi                                \label{e.phi}
-\end{eqnletter}
+Xenon-36 has a Q-value of \SI{2.48}{MeV} and therefore gamma rays from naturally-occurring radioactive isotopes are a background that can make the $0\nu\beta\beta$-decay difficult or impossible to detect.
+However, we are able to achieve great energy resolution through collecting both ionization electrons and scintillation light from Xenon and furthermore tagging of the daughter Barium ion in principle could allow for complete background rejection.
+
+\subsubsection{KamLAND-Zen}
+\subsubsection{GERDA}
+\subsubsection{CUORE}
+\subsubsection{Cupid-0}
 
 \subsection{Citations}
 We're almost done, just some citations~\cite{ref:apo}
