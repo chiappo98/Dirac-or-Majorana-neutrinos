@@ -7,6 +7,7 @@
 \usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{mathrsfs}
+\usepackage{siunitx}
 
 \begin{document}
 
@@ -86,8 +87,8 @@ On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusi
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
 These mediators are massive %\cite{pdg}:
 \begin{gather}
-M_W=80.379\pm0.012 GeV \\
-M_Z=91.1876\pm0.0021 GeV
+M_W=\SI{80.379\pm0.012}{GeV} \\
+M_Z=\SI{91.1876\pm0.0021}{GeV}
 \end{gather}
 It is this fact that makes interactions mediated by these bosons weak and short-ranged.%insert weak coupling and cross sections?
 
@@ -249,6 +250,7 @@ where $\nu_i$ are mass eigenstates with eigenvalues $m_i$.
 \end{equation}
 It's straightforward to verify that field $\nu_i$ satisfies Majorana condition $\nu_i=\nu_i^c$, and that the flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. 
 \begin{equation}
+\label{eq:nuMix}
 \nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
 \end{equation}
 The matrix \emph{U} is called PMNS matrix.
@@ -376,19 +378,21 @@ The effective Hamiltonian of $\beta$-decay is
 \begin{equation}
 \mathcal{H}=\frac{G_F}{\sqrt{2}}2\bar{e}_L\gamma_{\alpha}\nu_{eL}j^{\alpha}+h.c.
 \end{equation}
-The matrix element for neutrinoless double $\beta$-decay has to be calculated in the second order of the perturbation theory in $G_F$. Going directly to the result, the total decay rate for this process is
+In order to find the decay rate of this process, the matrix element for neutrinoless double $\beta$-decay has to be calculated in the second order of the perturbation theory in $G_F$. Going directly to the result, the total decay rate is
 \begin{equation}
 \Gamma^{0\nu}=\frac{ln(2)}{T^{0\nu}_{1/2}}=|m_{\beta\beta}|^2|M^{0\nu}|^2G^{0\nu}(Q,Z)
 \end{equation}
 where the matrix element is given by the product of the effective Majorana mass $m_{\beta\beta}$ and the nuclear matrix element $M^{0\nu}$, and $G^{0\nu}(Q,Z)$ is the phase space factor, which includes effects of Coulomb interaction between electrons and the daughter nucleus. For a complete calculation of the decay rate see~\cite{ref:Bil}.
 
-A particular focus as to be set on the effective Majorana mass
+A particular focus has to be set on the effective Majorana mass
 \begin{equation}
-m_{\beta\beta}=sum_{i=1}^3U_{ek}^2m_k
+\label{eq:BBmass}
+m_{\beta\beta}=\sum_{i=1}^3U_{ek}^2m_k=|c_{12}^2c_{13}^2e^{2i\alpha_1}m_1+c_{13}^2s_{12}^2e^{2i\alpha_2}m_2+s_{13}^2m_3|
 \end{equation}
 since it depends on neutrino masses (still unknown) and on the matrix elements of the PMNS matrix, which are extracted from neutrino oscillation experiments.
-From studying solar neutrinos we get $\Delta m_S^2\equiv\Delta m_{12}^2>0$, while from atmospheric neutrino experiments $\Delta m_A^2$ is derived.
-At this point however there a re two possibilities:
+
+Studying solar neutrinos we get $\Delta m_S^2\equiv\Delta m_{12}^2>0$, while from atmospheric neutrino experiments $\Delta m_A^2$ is derived.
+At this point however there are two possibilities, since we don't know values of neutrino masses but only their squared differences:
 \begin{enumerate}
 \item Normal ordering (NO)
 \begin{equation}
@@ -422,12 +426,63 @@ where
 \begin{equation}
 s^M(\alpha)=\begin{pmatrix}e^{i\alpha_1}&0&0\\0&e^{i\alpha_2}&0\\0&0&1\end{pmatrix}
 \end{equation}
+These two complex phases $\alpha_{1,2}$ however cannot be measured.
 
+In the table below values of the oscillation parameters in case of NO (IO) can be found. They are obtained from Super-Kamiokande data analysis. %cite
+\[
+\begin{array}{lcc}
+\toprule
+&\text{Normal Ordering}&\text{Inverted Ordering}\\
+\midrule
+\sin^2\theta_{12}/10^{-1}&3.10_{-0.12}^{+0.13}&3.10_{-0.12}^{+0.13}\\
+\theta_{12}/\si{\degree}&33.82_{-0.76}^{+0.78}&33.82_{-0.76}^{+0.78}\\
+\sin^2\theta_{23}/10^{-1}&5.58_{-0.33}^{+0.20}&5.63_{-0.26}^{+0.19}\\
+\theta_{23}/\si{\degree}&48.3_{-1.9}^{+1.2}&48.6_{-1.5}^{+1.1}\\
+\sin^2\theta_{13}/10^{-2}&2.241_{-0.065}^{+0.066}&2.261_{-0.064}^{+0.067}\\
+\theta_{13}/\si{\degree}&8.61_{-0.13}^{+0.13}&8.65_{-0.12}^{+0.13}\\
+\delta_{CP}/\si{\degree}&222_{-28}^{+38}&285_{-26}^{+24}\\
+\Delta m^2_{21}/10^{-5}eV^2&7.39_{-0.20}^{+0.21}&7.39_{-0.20}^{+0.21}\\
+\Delta m_{32}^2/10^{-3}eV^2&2.449_{-0.030}^{+0.032}&-2.509_{-0.032}^{+0.032}\\
+\bottomrule
+\end{array}
+\]
+The effective Majorana mass is strongly dependent on the neutrino mass spectrum. Starting from Eq. (\ref{eq:BBmass}) and experimental values of oscillation parameters we can derive upper and lower bounds for $m_{\beta\beta}$.
+\begin{itemize}
+\item For Normal Ordering the following approximation is valid
+	\begin{equation}
+	m_1\ll\sqrt{\Delta m_S^2} \quad m_2\simeq\sqrt{\Delta m_S^2} \quad m_3\simeq\sqrt{\Delta m_A^2}
+	\end{equation}
+	resulting in 
+	\begin{equation}
+	\SI{1.4}{meV} \leq m_{\beta\beta} \leq \SI{3.6}{meV}
+	\end{equation}
+\item In the case of Inverted Ordering instead
+	\begin{equation}
+	m_1\simeq\sqrt{\Delta m_A^2} \quad m_2\simeq\sqrt{\Delta m_A^2} \ll\sqrt{\Delta m_A^2}
+	\end{equation}
+	resulting in
+	\begin{equation}
+	\SI{20}{meV}\leq m_{\beta\beta} \leq \SI{49}{meV}
+	\end{equation}
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{BBboundaries.png}
+\caption{Predictions on $m_{\beta\beta}$ from neutrino oscillation versus the lightest neutrino mass $m_0$ in case of Normal (blue region) and Inverted (red region) Ordering. The excluded region by cosmological data is presented in yellow. The $3\sigma$ values of neutrino oscillation parameters are considered }%cite.}
+\label{fig:BBbound}
+\end{figure}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In Figure~\ref{fig:BBbound} prediction on the effective Majorana mass is plotted as a function of the lightest neutrino mass $m_0$. The two Majorana phases $\alpha_{1,2}$ are assumed to be arbitrary. From cosmological observations %\cite
+ it is derived the constraint 
+\begin{equation}
+\sum_{k=1}^3m_k\leq m_{astro}=\SI{110}{meV}
+\end{equation}
 
+It's clear that the observation of $0\nu\beta\beta$-decay would confirm the Majorana nature of neutrinos and also provide important  information on the neutrino mass spectrum.
+
+In the following section highlights on some of the ongoing %or past?
+experiments on neutrinoless double beta decay are presented.
 
 \subsection{Experiments}
-
-
 
 
 \subsection{Mathematics}
@@ -476,6 +531,8 @@ the auspices of the Italian Physical Society.
 \bibitem{ref:Juji} \BY{Fujikawa~K.} \IN{Eur. Phys. J. C}{80}{2020}{285}.
 \bibitem{ref:Bil} \BY{Bilenky~S.M.} \TITLE{Neutrinos: Majorana or Dirac?}, (2020) [arXiv:2008.02110v1].
 \bibitem{ref:pdg} \BY{Zyla~P.A. \emph{et al.}} (Particle Data Group), \IN{Prog. Theor. Exp. Phys.}{2020} {083C01} (2020).
+%\bibitem{ref:Ver} \BY{Vergados}
+
 \end{thebibliography}
 
 \end{document}
