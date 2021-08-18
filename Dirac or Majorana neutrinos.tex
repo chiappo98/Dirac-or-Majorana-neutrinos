@@ -373,7 +373,7 @@ This process could be observed whether other possible decay channels are forbidd
 This process has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Fig.~\ref{fig:Nspectrum}.
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{Nspectrum.png}
+\includegraphics[width=0.5\textwidth]{Nspectrum.png}
 \caption{Energy spectra for double $\beta$-decay and neutrinoless double $\beta$-decay.}
 \label{fig:Nspectrum}
 \end{figure}
@@ -548,7 +548,7 @@ The backgrounds from Xenon loaded liquid scintillator vessel has been reduced by
 The further improvement of the detector will lead to KamLAND2-Zen, which will use \SI{1}{ton} of Xenon and is scheduled to start in 2027.
 
 \subsubsection{GERDA}
-The GERmanium Detector Array experiment worked with high-purity germanium detectors made out of material enriched in \ce{^{76}Ge} to $\sim87\%$. It is located at the Laboratori Nazionali del Gran Sasso of INFN, Italy,  under \SI{3500}{m} of water equivalent of rock.%The detection efficiency in this way was maximized since the detector and the source coincide.
+The GERmanium Detector Array experiment worked with high-purity germanium detectors made out of material enriched in \ce{^{76}Ge} to $\sim87\%$. It is located at the Laboratori Nazionali del Gran Sasso (LNGS) of INFN, Italy,  under \SI{3500}{m} of water equivalent of rock.
 One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. is Q-value is \SI{2039.06}{keV}
 \begin{figure}
 \centering
@@ -564,24 +564,40 @@ In this experiment detector and the source coincide, maximizing the detection ef
 The two electrons emitted in a double $\beta$-decay have a range in germanium of the order of \SI{1}{mm}: they deposit their energy in a small volume of the detector and thus produce highly localized events. In contrast, $\gamma$ rays of similar energy mostly interact via Compton scattering and can produce events with several separated energy depositions. Events in which more than one germanium detectors is fired are therefore identified as background.
 
 Phase I of GERDA collected \SI{23.5}{Kg\cdot yr} of exposure between November 2011 and September 2013. After an overall upgrade GERDA Phase II started data acquisition in December 2015 until November 2019, with a total exposure of \SI{103.7}{Kg\cdot yr}.
-The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I, II , with a total exposure of \SI{127.2}{Kg\cdot yr} led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL \cite{ref:gerda}.
+The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I, II , with a total exposure of \SI{127.2}{Kg\cdot yr} led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL.
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Tgerda.png}
 \caption{Circles: lower limit (90\% CL) on the $0\nu\beta\beta$ decay half-life of \ce{^{76}Ge} set by GERDA as a function of the exposure. Triangles: median expectation in the assumption of no signal. \cite{ref:gerda}}
 \label{fig:Tgerda}
 \end{figure}
-The $T_{1/2}$ limit can be converted into an upper limit on the effective Majorana mass $m_{\beta\beta}<(79-180)\SI{}{meV}$ at 90\% CL.
+The $T_{1/2}$ limit can be converted into an upper limit on the effective Majorana mass $m_{\beta\beta}<(79-180)\SI{}{meV}$ at 90\% CL \cite{ref:gerda}.
 
-A new experiment, called LEGEND-200 has taken over the GERDA infrastracture at LNGS and will start data taking in 2021. %%
-After some upgrades it should reach a sensitivity of $10^{28}$ and beyond.
+A new experiment, called LEGEND-200 (Large Enriched Germanium Experiment for Neutrinoless double beta Decay) has taken over the GERDA infrastracture at LNGS and should start data taking in 2021, reaching in 5 years a sensitivity of $10^{27}$ and beyond.
 
-\subsubsection{CUORE}
-\subsubsection{Cupid-0}
+\subsubsection{CUPID-0}
+The project CUPID (CUORE Upgrade with Particle Identification) was conceived for the measurement of neutrinoless beta decay with scintillating bolometers. It is located at Laboratori Nazionali del Gran Sasso.
+It is based on the infrastructure of the CUORE experiment (also at LNGS), which was a ton-scale bolometric detector designed to search for $0\nu\beta\beta$-decay in \ce{^{130}Te}.
 
-\subsection{Citations}
-We're almost done, just some citations~\cite{ref:apo}
-and we will be over~\cite{ref:pul,ref:bra}.
+A blometer consists of a crystal operating as a cryogenic calorimeter, around \SI{0.01}{K}. At this temperature a minimum energy release in it produces a temperature variation. By measuring this thermal variation it is possible to reconstruct the energy released.
+
+CUORE used a detector made of 988 \ce{TeO2} crystals, which have important characteristic of emitting very faint light signals, together with the production of heat signals. The emitted light is measured by dedicated (bolometric) detectors, able to work at cryogenic temperatures. In this way the natural background radiation (e.g. $\alpha$ particles) can be reduced.
+The choice of Tellurium was made since it has a Q-value for $0\nu\beta\beta$-decay of \SI{2527.518}{keV}, above most of the natural radioactive background \cite{ref:cuore}.
+
+CUPID will increase the active mass, through isotopic enrichment and also decrease the background by two orders of magnitude with respect to CUORE. The experiment used \ce{^{82}Se}, which has one of the highest Q-values for $0\nu\beta\beta$-decay (\SI{2997.9}{keV}). This choice allows to work in a region barely affected by the $\beta/\gamma$ background from natural radioactivity.
+Selenium was used to grow 24 cylindrical \ce{Zn^{82}Se} crystals 95\% enriched in \ce{^{82}Se}, arranged in five towers (see Figure~\ref{fig:cupid}).
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{cupid.png}
+\caption{a) Lateral view of a single module: the \ce{ZnSe} is placed between two light detectors (Ge-LD), not visible in this scheme because of their small thickness (about \SI{170}{nm}); all the detectors are held in the copper structure. Top (b) and 3D (c) views of the CUPID-0 detector. d) 3D view of the CUPID-0 detector hosted in the CUORE-0 cryostat. Source: https://www.lngs.infn.it/en/cupid}
+\label{fig:cupid}
+\end{figure}
+The CUPID-0 detector has been taking data from June 2017 to December 2018, collecting a \ce{^{82}Se} exposure of \SI{5.29}{Kg\cdot yr}. The extrapolated limit on the half-life for $0\nu\beta\beta$-decay in Selenium was $T_{1/2}>3.5\cdot10^{24}\SI{}{yr}$ corresponding to $m_{\beta\beta}<(311-638)\SI{}{meV}$ \cite{ref:cupid}. 
+
+CUORE experiment after a total exposure of \SI{372.5}{Kg\cdot yr} obtained a 90\% CL lower limit of $3.2\cdot10^{25}\SI{}{yr}$, which leads to an upper limit for the effective Majorana mass of $(75-350)\SI{}{meV}$ \cite{ref:cuore}.
+
+
+\section{Conclusions}
 
 
 \appendix
@@ -622,6 +638,8 @@ the auspices of the Italian Physical Society.
 \bibitem{ref:kam800} \BY{Gando~Y.} (on the behalf of the KamLAND-Zen Collaboration) \IN{J. Phys.: Conf. Ser.}{1468}{012142} 2020.
 \bibitem{ref:gerda} \BY{Agostini~M. \emph{et al.}} (GERDA Collaboration) \IN{Phys. Rev. Lett.}{125}{252502} 2020.
 \bibitem{ref:gerLay} \BY{Majorovits~B.} (for the GERDA collaboration) \TITLE{Search for $0\nu\beta\beta$-decay with GERDA Phase II} https://slideplayer.com/slide/12699477/
+\bibitem{ref:cuore} \BY{Adams~D.Q. \emph{et al.}} (CUORE Collaboration) \TITLE{Improved Limit on Neutrinoless Double Beta Decay in \ce{^{130}Te} with CUORE}, 2019 [arXiv:1912.10966v1].
+\bibitem{ref:cupid} \BY{Azzolini~O. \emph{et al.}} \TITLE{Final result of CUPID-0 phase-I in the search for the \ce{^{82}Se} Neutrinoless Double Beta Decay}, 2019 [arXiv:1906.05001v1].
 
 \end{thebibliography}
 
