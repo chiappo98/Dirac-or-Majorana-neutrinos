@@ -524,7 +524,7 @@ The experiment will reach a half-life sensitivity of $1.35\cdot10^{28}\SI{}{yr}$
 KamLAND (Kamioka Liquid scintillator Anti-Neutrino Detector) is an experiment searching for the $0\nu\beta\beta$-decay of \ce{^{136}Xe} using the KamLAND facility. It is located \SI{1000}{m} underground in the Kamioka mine in Gifu prefecture in Japan.
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{KamLAND.png}
+\includegraphics[width=0.55\textwidth]{KamLAND.png}
 \caption{KamLAND-Zen detector. In the centre of the detector there is the inner balloon (IB) filled with enriched \ce{^{136}Xe}-loaded LS \cite{ref:kam}.}
 \label{fig:kamDet}
 \end{figure}
@@ -534,14 +534,48 @@ KamLAND-Zen is a minor modification of KamLAND, accomplished just by putting in 
 KamLAND-Zen started data acquisition in October 2011 until June 2012 (phase I) and after an exposure of \SI{89.5}{Kg\cdot yr} the 90\% CL limit on half-life resulted in $T_{1/2}>1.9\cdot10^{25}\SI{}{yr}$.
 The phase II started in November 2013 until October 2015 and obtained the limit  $T_{1/2}>9.2\cdot10^{25}\SI{}{yr}$ which, combined with the one in phase I lead to  $T_{1/2}>1.07\cdot10^{26}\SI{}{yr}$ at 90\% CL.
 
-The upper limit on Majorana mass resulted in $\langle m_{\beta\beta}\rangle<(61-165)\SI{}{meV}$, as shown in  Figure~\ref{fig:kamSpec}, while the limit on the lightest neutrino mass is obtained as $(180-480)\SI{}{meV}$ at 90\% CL.
+The upper limit on Majorana mass resulted in $\langle m_{\beta\beta}\rangle<(61-165)\SI{}{meV}$, as shown in  Figure~\ref{fig:kamSpec}, while the limit on the lightest neutrino mass is obtained as $(180-480)\SI{}{meV}$ at 90\% CL \cite{ref:kam}.
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{KamSpectrum.png}
-\caption{Effective Majorana mass as a function of the lightest neutrino mass.}
+\includegraphics[width=0.6\textwidth]{KamSpectrum.png}
+\caption{Effective Majorana mass as a function of the lightest neutrino mass. The dark shaded regions are from the best-fit neutrino oscillation parameters for NO and IO mass spectrum. Light shaded regions are the $3\sigma$ ranges of the oscillation parameter uncertainties. Horizontal bands indicate 90\% CL upper limits on the $\langle m_{\beta\beta}\rangle$ from KamLAND-Zen and other experiments \cite{ref:kam}.} %%%not up to date
 \label{fig:kamSpec}
 \end{figure}
+
+A second period of data acquisition started in January 2019 with an enlarged IB which now contains \SI{750}{Kg} of Xenon. The new detector is called KamLAND-Zen 800.
+The backgrounds from Xenon loaded liquid scintillator vessel has been reduced by a factor 10. The very preliminary analysis of 132.7 days data gives lower limit for the $0\nu\beta\beta$ of $4\cdot 10^{25}\SI{}{yr}$ (90\% CL), and the sensitivity is $8\cdot 10^{25}$ years \cite{ref:kam800}. 
+
+The further improvement of the detector will lead to KamLAND2-Zen, which will use \SI{1}{ton} of Xenon and is scheduled to start in 2027.
+
 \subsubsection{GERDA}
+The GERmanium Detector Array experiment worked with high-purity germanium detectors made out of material enriched in \ce{^{76}Ge} to $\sim87\%$. It is located at the Laboratori Nazionali del Gran Sasso of INFN, Italy,  under \SI{3500}{m} of water equivalent of rock.%The detection efficiency in this way was maximized since the detector and the source coincide.
+One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. is Q-value is \SI{2039.06}{keV}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{GERDA.png}
+\caption{Experimental setup for the GERDA detector \cite{ref:gerLay}.}
+\label{fig:GerLayout}
+\end{figure}
+In Figure~\ref{fig:GerLayout} is displayed the set up of the detector. The core of the experiment is an array of broad energy germanium (BEGe) detectors suspended in strings into a cryostat filled with liquid Argon (LAr), which provides both shielding and cooling.
+The cryostat is surrounded by a water tank equipped with photomultimpliers to detect the residual cosmic muons (not stopped by the rock). The muon veto system is complemented by scintillators panels on the top of the clean room.
+A cylindrical volume around the array is instrumented with photosensors, in order to detect scintillation light in the LAr.
+
+In this experiment detector and the source coincide, maximizing the detection efficiency.
+The two electrons emitted in a double $\beta$-decay have a range in germanium of the order of \SI{1}{mm}: they deposit their energy in a small volume of the detector and thus produce highly localized events. In contrast, $\gamma$ rays of similar energy mostly interact via Compton scattering and can produce events with several separated energy depositions. Events in which more than one germanium detectors is fired are therefore identified as background.
+
+Phase I of GERDA collected \SI{23.5}{Kg\cdot yr} of exposure between November 2011 and September 2013. After an overall upgrade GERDA Phase II started data acquisition in December 2015 until November 2019, with a total exposure of \SI{103.7}{Kg\cdot yr}.
+The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I, II , with a total exposure of \SI{127.2}{Kg\cdot yr} led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL \cite{ref:gerda}.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{Tgerda.png}
+\caption{Circles: lower limit (90\% CL) on the $0\nu\beta\beta$ decay half-life of \ce{^{76}Ge} set by GERDA as a function of the exposure. Triangles: median expectation in the assumption of no signal. \cite{ref:gerda}}
+\label{fig:Tgerda}
+\end{figure}
+The $T_{1/2}$ limit can be converted into an upper limit on the effective Majorana mass $m_{\beta\beta}<(79-180)\SI{}{meV}$ at 90\% CL.
+
+A new experiment, called LEGEND-200 has taken over the GERDA infrastracture at LNGS and will start data taking in 2021. %%
+After some upgrades it should reach a sensitivity of $10^{28}$ and beyond.
+
 \subsubsection{CUORE}
 \subsubsection{Cupid-0}
 
@@ -585,6 +619,9 @@ the auspices of the Italian Physical Society.
 \bibitem{ref:exo} \BY{Anton~G. \emph{et al.}} (EXO-200 Collaboration), \IN{Phys. Rev. Lett.}{123}{16182} 2019.
 \bibitem{ref:nexo} \BY{Adhikari~G. \emph{et al.}} \TITLE{nEXO: Neutrinoless double beta decay search beyond $10^{28}$ year half-life sensitivity}, 2021 [arXiv:2106.16243v1].
 \bibitem{ref:kam} \BY{Shirai~J.} (for the KamLAND-Zen Collaboration) \IN{J. Phys.:Conf. Ser.}{888}{012031} 2017.
+\bibitem{ref:kam800} \BY{Gando~Y.} (on the behalf of the KamLAND-Zen Collaboration) \IN{J. Phys.: Conf. Ser.}{1468}{012142} 2020.
+\bibitem{ref:gerda} \BY{Agostini~M. \emph{et al.}} (GERDA Collaboration) \IN{Phys. Rev. Lett.}{125}{252502} 2020.
+\bibitem{ref:gerLay} \BY{Majorovits~B.} (for the GERDA collaboration) \TITLE{Search for $0\nu\beta\beta$-decay with GERDA Phase II} https://slideplayer.com/slide/12699477/
 
 \end{thebibliography}
 
