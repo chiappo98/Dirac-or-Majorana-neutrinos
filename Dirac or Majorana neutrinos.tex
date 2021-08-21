@@ -24,8 +24,7 @@
 \maketitle
 
 \begin{abstract}
-In this paper I will present the state of the research on neutrinos, together with several still open questions. In particular our focus will be set on whether neutrinos are Dirac or Majorana particles. In the end we will describes the experiments that attempt to observe a neutrinoless double beta decay in even-even nuclei%~\ref{}
-, which will prove the Majorana nature of these particles.
+In this paper I will present the current state of research on neutrinos and in particular I will focus on the open question whether neutrinos are Majorana or Dirac particles i.e. if they correspond to their antiparticles or not. The theories which try to account for these two possibilities will be discussed together with the experiments that attempt to answer this question~\cite{ref:exo,ref:cupid}. Indeed the observation of the neutrinoless double beta decay in even-even nuclei would assert that neutrinos are Majorana particles. 
 \end{abstract}
 
 \section{An elusive particle}
@@ -35,24 +34,24 @@ At the beginning this process was though to proceed as
 \[
 ^A_Z X\rightarrow ^A_{Z+1}Y+e^-
 \]
-However looking at the energy spectrum of emitted electrons (\emph{Fig.}~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missed. For a two body decay the electrons' energy spectrum should form a sharp peak around 
+However looking at the energy spectrum of emitted electrons (Fig.~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missed. For a two body decay the electrons' energy spectrum should form a sharp peak around 
 \begin{equation}
 E=\biggl(\frac{m^2_A-m^2_B+m^2_e}{2m_A}\biggr)c^2
 \label{eq:Emax}
 \end{equation}
-This energy corresponds only to the maximum electron energy of \emph{Figure}~\ref{fig:betaD}.
+This energy corresponds only to the maximum electron energy of Figure~\ref{fig:betaD}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{energy_spectrum.png}
-\caption{The beta decay spectrum of tritium ($^3_1H\rightarrow ^3_2He$). (\emph{Source}: G.M. Lewis, \emph{Neutrinos} (London: Wykeham, 1970))}
+\caption{The beta decay spectrum of tritium ($^3_1H\rightarrow ^3_2He$). \emph{Source}: G.M. Lewis, \emph{Neutrinos} (London: Wykeham, 1970)}
 \label{fig:betaD}
 \end{figure}
 
 The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
 Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
 
-Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons, as shown in Table~\ref{tab:classification}. %~\ref{cottingham} (maybe inside caption)
+Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons, as shown in Table~\ref{tab:classification}~\cite{ref:cott}.
 \begin{table}[H]
 \begin{tabular}{cccc}
 \toprule
@@ -87,7 +86,7 @@ K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
 On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrinos source for particle physics experiments.
 
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
-These mediators are massive %\cite{pdg}:
+These mediators are massive \cite{ref:pdgBos}:
 \begin{gather}
 M_W=\SI{80.379\pm0.012}{GeV} \\
 M_Z=\SI{91.1876\pm0.0021}{GeV}
@@ -95,12 +94,12 @@ M_Z=\SI{91.1876\pm0.0021}{GeV}
 It is this fact that makes interactions mediated by these bosons weak and short-ranged.%insert weak coupling and cross sections?
 
 Being neutral leptons neutrinos interact only through weak interactions, and hence are very difficult to detect. 
-On the other side they are very useful to study weak interactions since weak transition amplitude of processes in which they are involved is not overcame by strong or electromagnetic amplitudes.
+On the other side they are very useful to study weak interactions, since the weak transition amplitude of processes in which they are involved is not overcame by strong or electromagnetic amplitudes.
 Neutrinos can be detected through the inverse beta decay interaction
 \begin{equation}
 \bar{\nu}_e+p \rightarrow e^++n
 \end {equation}
-that is, observing the emitted charged lepton, usually by its Cherenkov emission. %verify
+that is, observing the emitted charged lepton.
 Another interaction channel is elastic scattering 
 \begin{equation}
 \nu_i+e^- \rightarrow \nu_i+e^- \quad \text{where $i=e, \mu, \tau$}
@@ -108,20 +107,24 @@ Another interaction channel is elastic scattering
 which has the advantage of involving all neutrino flavors.
 
 \subsection{Neutrino mixing and CP violation}
-Several experiments which study the flux of neutrinos coming from a nuclear reactor, or of Solar and atmospheric neutrinos observed some discrepancies, such as,  for example, the fact that the flux of electron neutrinos arriving on Earth form the Sun is about an half of that expected from theory.
-Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrinos, are able to explain these observations. However in this way conservation of Lepton number is violated, and what's more, neutrino mixing implies that $e$, $\mu$ and $\tau$ neutrinos are not massless, as conceived by Bruno Pontecorvo in 1968. %\cite?? (WRAP theses pag.8)
+Several experiments studied neutrino fluxes coming from different sources, such as nuclear reactors, the Sun and the atmosphere. They observed some discrepancies:
+\begin{itemize}
+\item The flux of electron neutrinos arriving on Earth form the Sun is about an half of that expected from theory (the so called Solar Neutrino Problem).
+\item The observed ratio of $\nu_{\mu}/\nu_e$ events from atmospheric neutrinos is only $\sim0.6$ of the predicted value. This deficit is known as the Atmospheric Neutrino Anomaly.
+\end{itemize}
+Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrinos, are able to explain these experimental data \cite{ref:wrap}. The most important consequence of the discovery of neutrino mixing is that $e$, $\mu$ and $\tau$ neutrinos cannot be massless, as conceived by Bruno Pontecorvo in 1968. 
 %say something on Majorana neutrinos??
 
 \section{Theory}
 
 \subsection{Dirac equation}
-The Dirac equation was invented by Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
+The Dirac equation was invented by P.A.M. Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
 The Dirac equation is
 \begin{equation}
 \label{eq:dir}
 (i\gamma^{\mu}\partial_{\mu}-m)\psi=0
 \end{equation}
-where the Dirac spinor is composed by a left-handed spinor and a right-handed spinor.
+where the Dirac spinor is composed by a left-handed spinor and a right-handed spinor. %è sempre così o è una particolare base?
 \begin{equation} 
 \psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_L\\ \psi_R \end{pmatrix}
 \end{equation}
@@ -139,13 +142,14 @@ Equation (\ref{eq:dir}) has plane wave solutions of the form
 \qquad
 \psi_R=u_Re^{i(\vec{p}\cdot\vec{r}-Et)}
 \end{equation}
-where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose the particle rest frame, i.e. in which $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus found positive and negative energy solutions%solve problem about spinors u and u_L
+where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose the particle rest frame, i.e. in which $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus find positive and negative energy solutions%solve problem about spinors u and u_L
 \begin{gather}
 \psi_L=ue^{-imt},\qquad  \psi_R=ue^{-imt} \\
 \psi_L=ve^{imt},\qquad  \psi_R=-ve^{imt}
 \end{gather}
 The latter have to be interpreted as positive energy antiparticle states.
 The total Lagrangian density which describes weak interactions of leptons is determined by the requirement of $U_Y(1)\times SU_L(2)$ local gauge symmetry.
+
 Generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
 This mechanism could in principle be applied also to neutrinos, however since the Standard Model does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
 
@@ -498,7 +502,7 @@ In the following section highlights on some of the present and past experiments 
 
 \subsection{Experiments}
 The search for $0\nu\beta\beta$-decay is carried out through several large scale experiments.General requirements for the employed detectors are high purity, low background and huge dimensions of the samples, because of the small cross-section of the process.
-Experiments we are going to quickly discuss use three different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA) and Tellurium-130 (CUORE and Cupid-0).
+Experiments we are going to quickly discuss use three different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA), Tellurium-130 (CUORE) and Selenium-82 (Cupid-0).
 
 \subsubsection{EXO}
 The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) at a depth of about \SI{1624}{m} water equivalent near Carlsbad in New Mexico (USA).
@@ -552,7 +556,7 @@ The GERmanium Detector Array experiment worked with high-purity germanium detect
 One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. is Q-value is \SI{2039.06}{keV}
 \begin{figure}
 \centering
-\includegraphics[width=0.85\textwidth]{GERDA.png}
+\includegraphics[width=0.95\textwidth]{GERDA.png}
 \caption{Experimental setup for the GERDA detector \cite{ref:gerLay}.}
 \label{fig:GerLayout}
 \end{figure}
@@ -610,19 +614,10 @@ This work was produced, supported and perpetrated by M. Bellacosa under
 the auspices of the Italian Physical Society.
 
 \begin{thebibliography}{0}
-\bibitem{ref:apo} \BY{Boccaccio~G. \atque de~Cam\~oes~L.}
-  \IN{Phys. Rev. A}{13}{1999}{12};
-  \SAME{69}{999}{1666}.
-\bibitem{ref:pul} \BY{Pulci~L.}
-  preprint INFN 8181.
-\bibitem{ref:bra} \BY{Bragg~B.}
-  \TITLE{Tender comrade},
-  in \TITLE{Workers Playtime},
-                  edited by \NAME{Tizio A. \atque Caio B.}
-                  (Unexeditor, Bologna) 1997, pp.~1-10.
-
 \bibitem{ref:cott} \BY{Cottingham~W.N. \atque Greenwood~D.A.} 
 \TITLE {An introduction to the Standard Model of Particle Physics. Second edition.} Cambridge University Press, 2007.
+\bibitem{ref:pdgBos} \BY{Tanabashi~M. \emph{et al.}} (Particle Data Group) \IN{Phys. Rev. D}{98}{030001} (2018) and 2019 update.
+\bibitem{ref:wrap} \BY{Chappell~A.} \TITLE{CP violation and neutrino mass ordering at the T2K experiment} PhD thesis, University of Warwick (2019), pp. 5-8.
 \bibitem{ref:ait2} \BY{Aitchison~I.J.R. \atque Hey~A.J.G.} \TITLE{Gauge Theories in Particle Physics. A practical introduction. Vol.2}, in \TITLE{Graduate student series in Physics}, edited by \NAME{Brewer~D.A.} (Institute of Physics Publishing, Bristol and Philadelphia) 2004.
 %pp368-372
 \bibitem{ref:Halzen} \BY{Halzen~F. \atque Martin~A.D.} \TITLE{Quarks and Leptons: An Introductory Course in Modern Particle Physics} 
