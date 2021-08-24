@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-In this paper I will present the current state of research on neutrinos and in particular I will focus on the open question whether neutrinos are Majorana or Dirac particles i.e. if they correspond to their antiparticles or not. The theories which try to account for these two possibilities will be discussed together with the experiments that attempt to answer this question~\cite{ref:front,ref:cupid}. Indeed, the observation of the neutrinoless double beta decay in even-even nuclei would assert that neutrinos are Majorana particles. 
+In this paper I will present the current state of research on neutrinos and in particular I will focus on the open question whether neutrinos are Majorana or Dirac particles i.e. if they correspond to their antiparticles or not. The main theories which try to account for these two possibilities will be discussed together with the experiments~\cite{ref:front,ref:cupid} that attempt to shed light on this issue. Indeed, the observation of Lepton number violating processes, such as neutrinoless double beta decay in even-even nuclei, would assert that neutrinos are Majorana particles. 
 \end{abstract}
 
 \section{An elusive particle}
@@ -71,11 +71,11 @@ $\nu_\tau$ & 0 &  & 0\\
  
 According to the Standard Model (SM) neutrinos are \emph{massless} fermions. Leptons in the table above all have Total Lepton Number $L=+1$, while their antiparticles have $L=-1$, together with opposite electric charge.
 
-An interesting feature of weak interactions is that it does not conserve parity. Indeed, it was demonstrated by Madame Wu in 1957 that only left-handed component of electrons and neutrinos participate in the interaction, and the same for other flavors. Conversely antiparticles enter in interactions with right-handed component.
+An interesting feature of weak interactions is that they do not conserve parity. Indeed, it was demonstrated by Madame Wu in 1957 that only left-handed component of electrons and neutrinos participate in the interaction, and the same for other flavors. Conversely antiparticles enter in interactions with right-handed component.
 
 \subsection{Neutrinos production and interaction}
 \label{sec:prod}
-Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions, but also in weak decays of unstable atomic nuclei. 
+Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions, such as the ones shown below, but also in weak decays of unstable atomic nuclei. 
 \begin{eqnletter}
 \label{eq:lep}
 \mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu \label{eq:Lep}\\
@@ -83,9 +83,9 @@ Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{
 K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
 &\hookrightarrow& \pi^0+e^++\bar{\nu}_e \label{eq:semiL3}
 \end{eqnletter}
-On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrinos source for particle physics experiments.
+On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrino sources for particle physics experiments.
 
-Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final fermions. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
+Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final states. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
 These mediators are massive \cite{ref:pdgBos}:
 \begin{gather}
 M_W=\SI{80.379\pm0.012}{GeV} \\
@@ -93,7 +93,7 @@ M_Z=\SI{91.1876\pm0.0021}{GeV}
 \end{gather}
 It is this fact that makes interactions mediated by these bosons weak and short-ranged.%insert weak coupling and cross sections?
 
-Being neutral leptons neutrinos interact only through weak interactions, and hence are very difficult to detect. 
+Being neutral leptons, neutrinos interact only through weak interactions and hence are very difficult to detect. 
 On the other side they are very useful to study weak interactions, since the weak transition amplitude of processes in which they are involved is not overcame by strong or electromagnetic amplitudes.
 Neutrinos can be detected through the inverse beta decay interaction
 \begin{equation}
@@ -106,7 +106,7 @@ Another interaction channel is elastic scattering
 \end{equation}
 which has the advantage of involving all neutrino flavors.
 
-\subsection{Neutrino mixing and CP violation}
+\subsection{Neutrino mixing}
 Several experiments studied neutrino fluxes coming from different sources, such as nuclear reactors, the Sun and the atmosphere. They observed some discrepancies:
 \begin{itemize}
 \item The flux of electron neutrinos arriving on Earth form the Sun is about an half of that expected from theory (the so called Solar Neutrino Problem).
@@ -116,47 +116,29 @@ Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrino
 %say something on Majorana neutrinos??
 
 \section{Theory}
-
-\subsection{Dirac equation}
-The Dirac equation was invented by P.A.M. Dirac in seeking to make Schrödinger's equation for an electron compatible with special relativity. The Dirac field $\psi$ is a four component spinor, which can describe both particles and antiparticles, with half-integer spin.
-The Dirac equation is
+\subsection{Dirac neutrinos}
+Fermion fields in the SM are described by the Dirac equation 
 \begin{equation}
 \label{eq:dir}
 (i\gamma^{\mu}\partial_{\mu}-m)\psi=0
 \end{equation}
-where the Dirac spinor is composed by a left-handed spinor and a right-handed spinor. %è sempre così o è una particolare base?
+where $\psi$ is composed by a left-handed spinor and a right-handed spinor. %è sempre così o è una particolare base?
 \begin{equation} 
 \psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_L\\ \psi_R \end{pmatrix}
 \end{equation}
-
 From Dirac equation it is possible to build a Lagrangian density
 \begin{equation}
 \label{eq:DirLag}
 \mathcal{L}=\bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
 \end{equation}
 where $\bar{\psi}$ is the row matrix $\bar{\psi}=\psi^{\dagger}\gamma^0$.
+The SM Lagrangian for a massive field $\psi$ hence must be of the form (\ref{eq:DirLag}).
 
-Equation (\ref{eq:dir}) has plane wave solutions of the form
-\begin{equation}
-\psi_L=u_Le^{i(\vec{p}\cdot\vec{r}-Et)},
-\qquad
-\psi_R=u_Re^{i(\vec{p}\cdot\vec{r}-Et)}
-\end{equation}
-where $u_L$ and $u_R$ are two component spinors. For simplicity lets choose the particle rest frame, i.e. in which $\vec{p}=0$. Since Dirac equation must satisfy special relativity we have that $E^2=p^2+m^2$ and therefore $E=\pm m$. We thus find positive and negative energy solutions%solve problem about spinors u and u_L
-\begin{gather}
-\psi_L=ue^{-imt},\qquad  \psi_R=ue^{-imt} \\
-\psi_L=ve^{imt},\qquad  \psi_R=-ve^{imt}
-\end{gather}
-The latter have to be interpreted as positive energy antiparticle states.
-The total Lagrangian density which describes weak interactions of leptons is determined by the requirement of $U_Y(1)\times SU_L(2)$ local gauge symmetry.
-
-\subsection{Dirac neutrinos}
-Generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
-This mechanism could in principle be applied also to neutrinos, however since the Standard Model does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
+The generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
+This mechanism could in principle be applied also to neutrinos, however since the SMl does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
 
 In order to generate neutrino masses then we have to go beyond the Standard Model, adding an arbitrary number of sterile neutrinos.
 One possible solution is to introduce three new sterile (right-handed) neutrinos so that neutrinos acquire mass through the usual Yukawa mechanism.  However, since values of neutrino masses are many order of magnitude smaller than those of other fermions it is very unlikely they have a common SM Higgs origin.
-Another possibility is the method of the effective Lagrangian which, after SSB generates Majorana neutrinos with definite masses and suppression via seesaw mechanism of neutrino masses with respect to SM masses of leptons and quarks.
 
 If neutrinos are Dirac particles total lepton number \emph{L} is conserved, and neutrino $\nu_i$ and antineutrino $\bar{\nu}_i$ have lepton number respectively  $L(\nu_i)=+1$ and $L(\bar{\nu}_i)=-1$.
 For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos through any quantum number.
@@ -219,13 +201,13 @@ It looks extremely implausible that they have a common origin. This is also true
 5\cdot10^{-2}eV\simeq\biggl(\sqrt{\Delta m^2_A}\biggr)\leq m_3\leq\biggl(\frac{1}{3}\sum_im_i\biggr)\simeq3\cdot10^{-1}eV
 \]
 where $\Delta m^2_A$ is the atmosphere neutrino mass-squared difference \cite{ref:Bil}.
+Another possibility is the method of the effective Lagrangian which, after SSB generates Majorana neutrinos with definite masses and suppression via seesaw mechanism of neutrino masses with respect to SM masses of leptons and quarks.
 
 \subsection{Majorana neutrinos}
 As we saw, Dirac mechanism for neutrino masses is not a completely exhaustive model.
 A new beyond-the-Standard Model theory has been developed trying to account for neutrino masses generation in a more natural way. To be precise there is not a single theory but many \cite{ref:Bronc}\cite{ref:Bil}\cite{ref:front}. 
 One of the most popular is the Weinberg effective Lagrangian: it allows the introduction of neutrino masses using only left-handed (Majorana) neutrino fields.
-The advantage of this model is that it minimizes the number of degrees of freedom required. 
-Dirac massive particles have four degrees of freedom ($\nu_{eL}$, $\nu_{eR}$ and their antiparticles), while for Majorana fermions they would be only two: $\nu_{eL}$ and $\nu_{eR}$. 
+The advantage of this model is that it minimizes the number of degrees of freedom required, since there is no need for right-handed neutrino fields $\nu_{R}$.
 
 In order to build a Lorentz invariant mass term, a product of left-handed and right-handed components is required; this is achieved by the fact that the charge conjugated field
 \begin{equation}
@@ -263,7 +245,7 @@ The matrix \emph{U} is called PMNS matrix.
 
 \subsubsection{Weinberg effective Lagrangian}
 In order to generate a Majorana mass term like (\ref{eq:MajLag}) Weinberg proposed a beyond the SM mechanism based on the effective Lagrangian approach.
-Since we are dealing only with left-handed neutrino field $\nu_{lL}$ instead of the lepton doublet $\psi_lL$, it is not possible to generate Majorana masses through the usual coupling with the Higgs field and the subsequent symmetry breaking. 
+Since we are dealing only with left-handed neutrino field $\nu_{lL}$ instead of the lepton doublet $\psi_{lL}$, it is not possible to generate Majorana masses through the usual coupling with the Higgs field and the subsequent symmetry breaking. 
 One way to proceed is through the $SU_L(2)\times U_Y(1)$ invariant
 \begin{equation}
 \label{eq:LorInv}
@@ -279,7 +261,7 @@ From (\ref{eq:LorInv}) the only possible effective Lagrangian which generates ne
 \mathcal{L}_{eff}=\frac{1}{\Lambda}\sum_{l',l}(\phi_C^{\dagger}\psi_{l'L})X_{l'l}(\phi_C^{\dagger}\psi_{lL})^c+h.c.
 \end{equation}
 where $X'$ is a symmetrical, non diagonal matrix.
-The factor $1/\Lambda$ has been introduce since the mass dimension of (\ref{eq:EffLag}) is five, while a Lagrangian should have mass dimension four, and indeed $\Lambda$ has dimension \emph{M}.
+The factor $1/\Lambda$, having dimension $M^{-1}$, has been introduce since the mass dimension of (\ref{eq:EffLag}) is five, while a Lagrangian should have mass dimension four.
 The parameter $\Lambda$ is important since it can be interpreted as the mass scale at which new physics appears.
 
 After SSB Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
@@ -326,7 +308,7 @@ Writing the complete mass term for $3+m$ neutrino generations results in
 \begin{equation}
 \mathcal{L}_{mass}=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}M_L & M_D\\ M_D^T & M_N\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
 \end{equation}
-where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. In case of type-I seesaw mechanism the choice is $M_L=0$. The mass matrix can be diagonalized by unitary matrix $U$ of dimension $3+m$ to give 
+where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. Since the Majorana mass term for LH neutrinos is forbidden from SM gauge invariance, it is physically reasonable to choose $M_L=0$. The mass matrix can be diagonalized by unitary matrix $U$ of dimension $3+m$ to give 
 \begin{equation}
 U^T\begin{pmatrix}0 & M_D\\ M_D^T & M_R\end{pmatrix}U=\begin{pmatrix}M_l & 0 \\ 0 & M_h\end{pmatrix}
 \end{equation}
@@ -341,25 +323,28 @@ Weinberg effective Lagrangian arises naturally from Lagrangian (\ref{eq:renormLa
 \mathcal{L}_{eff}=\mathcal{L}_{SM}+\frac{1}{M_R}\mathcal{L}^{d=5}+\frac{1}{M_R^2}\mathcal{L}^{d=6}+\dots
 \equiv \mathcal{L}_{SM}+\delta\mathcal{L}^{d=5}+\delta\mathcal{L}^{d=6}+\dots
 \end{equation}
-Here the $\delta\mathcal{L}^{d=5}$ effective Lagrangian corresponds to the Weinberg effective Lagrangian (\ref{eq:EffLag}) so that we can find the relation $\Lambda\equiv M_R$.
+Here the $\delta\mathcal{L}^{d=5}$ effective Lagrangian corresponds to the Weinberg effective Lagrangian (\ref{eq:EffLag}), so that we can find the relation $\Lambda\equiv M_R$.
 This means that the scale of new physics $\Lambda$ is defined by the masses of heavy Majorana fields $N$.
 The SM is an effective theory which properly describes the physics at energies below the mass scale $M_R$.
 
 \subsubsection{Light sterile neutrinos}
 It could be that some $n_s<m$ eigenvalues of the Majorana matrix $M_R$ are not higher than the electroweak scale; in this case there will be additional $n_s$ light states and we will have $3+n_s$ light neutrinos.
-Indications in favor of sterile neutrinos were obtained in different short baseline experiments, such as LSND and MiniBooNE, in which some anomalies were observed which cannot be explained by the three-flavor oscillation model.
+Indications in favor of sterile neutrinos were obtained in different short baseline experiments, such as LSND and MiniBooNE, where some anomalies were observed which cannot be explained by the three-flavor oscillation model.
 The existing data could be explained through the introduction of a fourth massive (sterile) neutrino. For a more detailed discussion see~\cite[sec.14]{ref:pdg}.  
 
 \subsection{Other Seesaw models}
 Apart from Type-I seesaw mechanism there is a variety of models able to generate Majorana mass terms and to account for the smallness of neutrino masses.
-The fundamental ones are called Type-II and Type-III seesaw models, which are then extended and hybridized.
+The fundamental ones are called Type-II and Type-III seesaw models, which can be further extended and hybridized.
 In Type-II models the Weinberg operator is generated by an additional Higgs triplet field $\Delta$ (different from the SM Higgs \emph{H}), while Type-III models introduce a fermion SU(2) triplet $\Sigma_L$. For a more detailed discussion see~\cite{ref:front}.
 
 In addition to these theories there is a large number of effective terms that can each generate their neutrino mass. Weinberg term is the only possible 5-dimensional term using the Gauge group of the SM. However there are higher-dimensional terms e.g. 7-dimensional terms which suppress the neutrino mass by $\sim1/M^3$.
 One of the advantage of these models is that the mass scale M is lower than in three-level models. On the other side in this way the number of possible neutrino mass models quickly become very large.
 
 \section{Nutrinoless double beta decay}
-Double beta decay ($2\nu\beta\beta$) is the simultaneous beta decay of two neutrons in a nucleus: $(A, Z)\rightarrow(A, Z+2)+2e^-+2\bar{\nu}_e$.
+Double beta decay ($2\nu\beta\beta$) is the simultaneous beta decay of two neutrons in a nucleus: 
+\begin{equation}
+(A, Z)\rightarrow(A, Z+2)+2e^-+2\bar{\nu}_e
+\end{equation}
 It is a second order process that has been observed in even-even nuclei in which single beta decay is energetically forbidden. As we saw, some models that extend the SM predict the existence of a \emph{neutrinoless} double beta decay ($0\nu\beta\beta$)
 \begin{equation}
 (A, Z)\rightarrow(A, Z+2)+2e^-
@@ -371,7 +356,7 @@ This process could be observed whether other possible decay channels are forbidd
 \caption{$0\nu\beta\beta$-decay.}
 \vspace{-10pt}
 \end{wrapfigure}
- This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum.The decay has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Fig.~\ref{fig:Nspectrum}.
+ This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum.The decay has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Figure~\ref{fig:Nspectrum}.
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{Nspectrum.png}
@@ -497,16 +482,16 @@ It's clear that the observation of $0\nu\beta\beta$-decay would confirm the Majo
 In the following section highlights on some of the present and past experiments on neutrinoless double beta decay are presented.
 
 \subsection{Experiments}
-The search for $0\nu\beta\beta$-decay is carried out through several large scale experiments.General requirements for the employed detectors are high purity, low background and huge dimensions of the samples, because of the small cross-section of the process.
-Experiments we are going to quickly discuss use three different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA), Tellurium-130 (CUORE) and Selenium-82 (Cupid-0).
+The search for $0\nu\beta\beta$-decay is carried out through several large scale experiments. General requirements for the employed detectors are high purity, low background and huge dimensions of the samples, because of the small cross-section of the process.
+Experiments we are going to quickly discuss in the following sections use four different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA), Tellurium-130 (CUORE) and Selenium-82 (Cupid-0).
 
 \subsubsection{EXO}
-The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) at a depth of about \SI{1624}{m} water equivalent near Carlsbad in New Mexico (USA).
+The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) near Carlsbad in New Mexico (USA), at a depth of about \SI{1624}{m} water equivalent.
 The current experiment EXO-200 consists of \SI{200}{Kg} of liquid Xenon (LXe) enriched to 80.6\% in \ce{^{136}Xe} isotope.  It was the first experiment to observe double beta decay in Xenon ($T_{1/2}\sim 2\cdot10^{21}\SI{}{yr}$).
 The LXe fills a TPC vessel, so that when a charged particle traverses it, a signal is produced through ionization. The ions drift towards the wire grids, which provide a 2D location. Scintillation light is also produced. The third coordinate is reconstructed from the time difference between light signal and ionization signal. The amount of light is proportional to the event's energy.
 
 Xenon-36 has a Q-value of \SI{2458}{keV} and therefore gamma rays from naturally-occurring radioactive isotopes are a background that can make the $0\nu\beta\beta$-decay difficult or impossible to detect.
-However, we are able to achieve great energy resolution through collecting both ionization electrons and scintillation light from Xenon and furthermore tagging of the daughter Barium ion in principle could allow for complete background rejection.
+However, we are able to achieve great energy resolution through collecting both ionization electrons and scintillation light from Xenon and furthermore tagging of the daughter Barium ions in principle could allow for complete background rejection.
 
 In December 2018 EXO-200 completed data taking with the upgraded detector ("Phase II", May 2016 to December 2018) after collecting a total exposure of \SI{234.1}{Kg\cdot yr}, similar to that of its first run ("Phase I", September 2011 to February 2014).
 The lower limit on the \ce{^{136}Xe} $0\nu\beta\beta$ half-life is $T_{1/2}>1.7\cdot10^{25}\SI{}{yr}$ ($T_{1/2}>4.3\cdot10^{25}\SI{}{yr}$) at 90\% CL in Phase I (Phase II), whereas the combined limit is $T_{1/2}>3.5\cdot10^{25}\SI{}{yr}$. From these results the upper limit on the Majorana mass is $\langle m_{\beta\beta}\rangle<(93-286)\SI{}{meV}$ \cite{ref:exo}.
@@ -549,14 +534,14 @@ The further improvement of the detector will lead to KamLAND2-Zen, which will us
 
 \subsubsection{GERDA}
 The GERmanium Detector Array experiment worked with high-purity germanium detectors made out of material enriched in \ce{^{76}Ge} to $\sim87\%$. It is located at the Laboratori Nazionali del Gran Sasso (LNGS) of INFN, Italy,  under \SI{3500}{m} of water equivalent of rock.
-One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. is Q-value is \SI{2039.06}{keV}
+One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. Its Q-value is \SI{2039.06}{keV}.
 \begin{figure}
 \centering
 \includegraphics[width=0.95\textwidth]{GERDA.png}
 \caption{Experimental setup for the GERDA detector \cite{ref:gerLay}.}
 \label{fig:GerLayout}
 \end{figure}
-In Figure~\ref{fig:GerLayout} is displayed the set up of the detector. The core of the experiment is an array of broad energy germanium (BEGe) detectors suspended in strings into a cryostat filled with liquid Argon (LAr), which provides both shielding and cooling.
+In Figure~\ref{fig:GerLayout} the set up of the detector is displayed; The core of the experiment is an array of broad energy germanium (BEGe) detectors suspended in strings into a cryostat filled with liquid Argon (LAr), which provides both shielding and cooling.
 The cryostat is surrounded by a water tank equipped with photomultimpliers to detect the residual cosmic muons (not stopped by the rock). The muon veto system is complemented by scintillators panels on the top of the clean room.
 A cylindrical volume around the array is instrumented with photosensors, in order to detect scintillation light in the LAr.
 
@@ -564,7 +549,7 @@ In this experiment detector and the source coincide, maximizing the detection ef
 The two electrons emitted in a double $\beta$-decay have a range in germanium of the order of \SI{1}{mm}: they deposit their energy in a small volume of the detector and thus produce highly localized events. In contrast, $\gamma$ rays of similar energy mostly interact via Compton scattering and can produce events with several separated energy depositions. Events in which more than one germanium detectors is fired are therefore identified as background.
 
 Phase I of GERDA collected \SI{23.5}{Kg\cdot yr} of exposure between November 2011 and September 2013. After an overall upgrade GERDA Phase II started data acquisition in December 2015 until November 2019, with a total exposure of \SI{103.7}{Kg\cdot yr}.
-The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I, II , with a total exposure of \SI{127.2}{Kg\cdot yr} led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL.
+The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I and II , with a total exposure of \SI{127.2}{Kg\cdot yr}, led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL.
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Tgerda.png}
@@ -597,7 +582,7 @@ The CUPID-0 detector has been taking data from June 2017 to December 2018, colle
 CUORE experiment after a total exposure of \SI{372.5}{Kg\cdot yr} obtained a 90\% CL lower limit of $3.2\cdot10^{25}\SI{}{yr}$, which leads to an upper limit for the effective Majorana mass of $(75-350)\SI{}{meV}$ \cite{ref:cuore}.
 
 \section{Collider experiments}
-We just discussed about several experiments which are trying to observe $0\nu\beta\beta$-decay. Complementary to them are on-going searches for lepton number violating processes at collider experiments such as LEP, Belle, LHCb and ATLAS/CMS.
+We just discussed about several experiments which are trying to observe $0\nu\beta\beta$-decay. Complementary to them are on-going searches for lepton number violating processes at collider experiments, such as LEP, Belle, LHCb and ATLAS/CMS.
 
 For Majorana neutrinos below the $M_W$ mass scale, lepton number violating processes may manifest in numerous way, including rare decays of mesons, baryons, $\mu$ and $\tau$ leptons and even SM electroweak bosons. An example of an L-violating process is displayed in Figure \ref{fig:Lviol}.
 \begin{figure}
@@ -606,7 +591,7 @@ For Majorana neutrinos below the $M_W$ mass scale, lepton number violating proce
 \caption{$B^-$ meson decay to L-violating final state via heavy Majorana N \cite{ref:front}.}
 \label{fig:Lviol}
 \end{figure}
-Indirectly, the presence of heavy Majorana neutrinos can appear in precision EW measurements as deviations from lepton flavor unitarity and universality,  and is ideally suited for $e^+e^-$ colliders.
+Indirectly, the presence of heavy Majorana neutrinos can appear in precision EW measurements as deviations from lepton flavor unitarity and universality. This kind of observation is ideally suited for $e^+e^-$ colliders.
 
 For Majorana neutrinos with $M_N>M_W$ the most studied production mechanism at pp colliders is the L-violating Drell-Yan CC process shown in Figure \ref{fig:DY}.
 \begin{figure}
@@ -615,7 +600,7 @@ For Majorana neutrinos with $M_N>M_W$ the most studied production mechanism at p
 \caption{Born diagram for heavy neutrino production via Drell-Yan process (for Type-I seesaw)  \cite{ref:front}.}
 \label{fig:DY}
 \end{figure}
-The Type-II seesaw is characterized by heavy SU(2) triplet scalars, which result in new singly- and doubly-charged Higgs bosons. they cab be copiously produced in pairs via SM electroweak gauge interactions if kinematically accessible at collider energies.
+The Type-II seesaw is characterized by heavy SU(2) triplet scalars, which result in new singly- and doubly-charged Higgs bosons. They can be copiously produced in pairs via SM electroweak gauge interactions if kinematically accessible at collider energies.
 For more details see \cite{ref:front}. 
 
 \section{Summary and Conclusions}
@@ -624,10 +609,10 @@ Since neutrinos are not massless, it is clear that the Standard Model has to be 
 The second possibility instead is to consider neutrinos as Majorana particles, i.e. particles which correspond to their antiparticles. It is a more economic choice since avoids the introduction of further degrees of freedom.
 Despite the propensity toward this second option there is no experimental indication in either direction. The crucial evidence would be the observation of a lepton number violating process. Indeed, this would imply that neutrinos are Majorana particles.
 
-One of the main branch of research in this field is devoted to observe the neutrinoless double beta decay. This process violates the lepton number by two units. Since now experiments were able only to fix lower limits on the half-life for $0\nu\beta\beta$-decay in different nuclei.
+One of the main branch of research in this field is devoted to observe the neutrinoless double beta decay, in which lepton number is violated by two units. So far, experiments were able only to fix lower limits on the half-life for $0\nu\beta\beta$-decay in different nuclei.
 A different attempt is made by collider experiments, with poor results for the moment.
 
-Despite the lack of experimental evidences the research on neutrinos is very active and full of promises. 
+Despite the lack of experimental evidences however, the research on neutrinos is very active and full of promises. 
 
 \begin{thebibliography}{0}
 \bibitem{ref:cott} \BY{Cottingham~W.N. \atque Greenwood~D.A.} 
