@@ -122,9 +122,14 @@ Fermion fields in the SM are described by the Dirac equation
 \label{eq:dir}
 (i\gamma^{\mu}\partial_{\mu}-m)\psi=0
 \end{equation}
-where $\psi$ is composed by a left-handed spinor and a right-handed spinor. %è sempre così o è una particolare base?
+where $\psi$ is composed by a left-handed spinor and a right-handed spinor. 
 \begin{equation} 
-\psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_L\\ \psi_R \end{pmatrix}
+\label{eq:spin}
+\psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_1\\ \psi_2\\ 0 \\ 0 \end{pmatrix}+\begin{pmatrix}0\\ 0 \\ \psi_3 \\ \psi_4\end{pmatrix}=\psi_L+\psi_R
+\end{equation}
+and $\gamma^{\mu}$ are the Dirac matrices in the chiral representation
+\begin{equation}
+\gamma^0=\begin{pmatrix}0&\mathbb{I}\\ \mathbb{I}&0\end{pmatrix}\qquad\gamma^i=\begin{pmatrix}0&\sigma^i\\ -\sigma^i&0\end{pmatrix}
 \end{equation}
 From Dirac equation it is possible to build a Lagrangian density
 \begin{equation}
@@ -132,7 +137,12 @@ From Dirac equation it is possible to build a Lagrangian density
 \mathcal{L}=\bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
 \end{equation}
 where $\bar{\psi}$ is the row matrix $\bar{\psi}=\psi^{\dagger}\gamma^0$.
-The SM Lagrangian for a massive field $\psi$ hence must be of the form (\ref{eq:DirLag}).
+Using (\ref{eq:spin}) Lagrangian (\ref{eq:DirLag}) becomes 
+\begin{equation}
+\label{eq:DirLag2}
+\mathcal{L}=i\bar{\psi}_L\gamma^{\mu}\partial_{\mu}\psi_L+i\bar{\psi}_R\gamma^{\mu}\partial_{\mu}\psi_R-m(\bar{\psi}_L\psi_R+\bar{\psi}_R\psi_L)
+\end{equation}
+The SM Lagrangian for a massive field $\psi$ hence must be of the form (\ref{eq:DirLag2}).
 
 The generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
 This mechanism could in principle be applied also to neutrinos, however since the SMl does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
@@ -300,7 +310,7 @@ If we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\ti
 The Standard Model for three generations of neutrinos can be extended to contain \emph{m} right-handed neutrinos $\nu_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{\nu_R}$ 
 \begin{equation}
 \label{eq:renormLag}
-\mathcal{L}=i\bar{\nu}_L\sigma^{\mu}\partial_{\mu}\nu_L+i\bar{\nu}_R\sigma^{\mu}\partial_{\mu}\nu_R-\bar{\nu}_LM_D\nu_R-\frac{1}{2}\bar{\nu}^c_LM_L\nu_L-\frac{1}{2}\bar{\nu}_R^cM_R\nu_R+h.c.
+\mathcal{L}=i\bar{\nu}_L\gamma^{\mu}\partial_{\mu}\nu_L+i\bar{\nu}_R\gamma^{\mu}\partial_{\mu}\nu_R-\bar{\nu}_LM_D\nu_R-\frac{1}{2}\bar{\nu}^c_LM_L\nu_L-\frac{1}{2}\bar{\nu}_R^cM_R\nu_R+h.c.
 \end{equation}
 It contains a $m\times3$ complex Dirac mass matrix $M_D$ together with Majorana mass matrices $M_L$ and $M_R$ for left-handed and right-handed neutrinos, which are respectively $m\times m$ and $3\times3$ symmetric matrices \cite{ref:Fuji}. 
 Notice that Majorana mass terms are not produced through Higgs mechanism and SSB.
