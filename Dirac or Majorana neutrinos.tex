@@ -29,17 +29,17 @@ In this paper I will present the current state of research on neutrinos and in p
 
 \section{An elusive particle}
 \subsection{History}
-The neutrino was first theorized in 1930 by Wolfgang Pauli in order to account for conservation of energy and momentum in beta decay.
+The neutrino was first theorized in 1930 by Wolfgang Pauli in order to account for conservation of energy and momentum in beta decays.
 At the beginning this process was though to proceed as
 \[
 ^A_Z X\rightarrow ^A_{Z+1}Y+e^-
 \]
-However looking at the energy spectrum of emitted electrons (Fig.~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missed. For a two body decay the electrons' energy spectrum should form a sharp peak around 
+However looking at the energy spectrum of emitted electrons (Fig.~\ref{fig:betaD}) it was clear that it was due to a three body process, but then a particle was missing. For a two body decay the electrons' energy spectrum should form a sharp peak around 
 \begin{equation}
 E=\biggl(\frac{m^2_A-m^2_B+m^2_e}{2m_A}\biggr)c^2
 \label{eq:Emax}
 \end{equation}
-This energy corresponds only to the maximum electron energy of Figure~\ref{fig:betaD}.
+This energy instead corresponds only to the maximum electron energy of Figure~\ref{fig:betaD}.
 
 \begin{figure}[h]
 \centering
@@ -48,7 +48,7 @@ This energy corresponds only to the maximum electron energy of Figure~\ref{fig:b
 \label{fig:betaD}
 \end{figure}
 
-The problem of the missing energy could be solved introducing a new particles, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
+The problem of the missing energy could be solved introducing a new particle, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
 Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
 
 Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons, as shown in Table~\ref{tab:classification}~\cite{ref:cott}.
@@ -71,7 +71,7 @@ $\nu_\tau$ & 0 &  & 0\\
  
 According to the Standard Model (SM) neutrinos are \emph{massless} fermions. Leptons in the table above all have Total Lepton Number $L=+1$, while their antiparticles have $L=-1$, together with opposite electric charge.
 
-An interesting feature of weak interactions is that they do not conserve parity. Indeed, it was demonstrated by Madame Wu in 1957 that only left-handed component of electrons and neutrinos participate in the interaction, and the same for other flavors. Conversely antiparticles enter in interactions with right-handed component.
+An interesting feature of weak interactions is that they do not conserve parity. Indeed, it was demonstrated by Madame Wu in 1957 that only left-handed components of electrons and neutrinos participate in weak processes, and the same for other flavors. Conversely antiparticles enter in interactions with right-handed components.
 
 \subsection{Neutrinos production and interaction}
 \label{sec:prod}
@@ -83,7 +83,7 @@ Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{
 K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
 &\hookrightarrow& \pi^0+e^++\bar{\nu}_e \label{eq:semiL3}
 \end{eqnletter}
-On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which often are used as neutrino sources for particle physics experiments.
+On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which are often used as neutrino sources for particle physics experiments.
 
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final states. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
 These mediators are massive \cite{ref:pdgBos}:
@@ -121,12 +121,12 @@ Fermion fields in the SM are described by the Dirac equation
 \label{eq:dir}
 (i\gamma^{\mu}\partial_{\mu}-m)\psi=0
 \end{equation}
-where $\psi$ is composed by a left-handed spinor and a right-handed spinor. 
+where $\psi$ is composed by a left-handed and a right-handed spinor,
 \begin{equation} 
 \label{eq:spin}
 \psi=\begin{pmatrix}\psi_1\\ \psi_2 \\ \psi_3 \\ \psi_4 \end{pmatrix}=\begin{pmatrix}\psi_1\\ \psi_2\\ 0 \\ 0 \end{pmatrix}+\begin{pmatrix}0\\ 0 \\ \psi_3 \\ \psi_4\end{pmatrix}=\psi_L+\psi_R
 \end{equation}
-and $\gamma^{\mu}$ are the Dirac matrices in the chiral representation
+and $\gamma^{\mu}$ are the Dirac matrices in the chiral representation.
 \begin{equation}
 \gamma^0=\begin{pmatrix}0&\mathbb{I}\\ \mathbb{I}&0\end{pmatrix}\qquad\gamma^i=\begin{pmatrix}0&\sigma^i\\ -\sigma^i&0\end{pmatrix}
 \end{equation}
@@ -136,7 +136,7 @@ From Dirac equation it is possible to build a Lagrangian density
 \mathcal{L}=\bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
 \end{equation}
 where $\bar{\psi}$ is the row matrix $\bar{\psi}=\psi^{\dagger}\gamma^0$.
-Using (\ref{eq:spin}) Lagrangian (\ref{eq:DirLag}) becomes 
+Using (\ref{eq:spin}), Lagrangian (\ref{eq:DirLag}) becomes 
 \begin{equation}
 \label{eq:DirLag2}
 \mathcal{L}=i\bar{\psi}_L\gamma^{\mu}\partial_{\mu}\psi_L+i\bar{\psi}_R\gamma^{\mu}\partial_{\mu}\psi_R-m(\bar{\psi}_L\psi_R+\bar{\psi}_R\psi_L)
@@ -144,13 +144,13 @@ Using (\ref{eq:spin}) Lagrangian (\ref{eq:DirLag}) becomes
 The SM Lagrangian for a massive field $\psi$ hence must be of the form (\ref{eq:DirLag2}).
 
 The generation of charged lepton masses is due to spontaneous symmetry breaking (SSB) after the coupling with the Higgs field.
-This mechanism could in principle be applied also to neutrinos, however since the SMl does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
+This mechanism could in principle be applied also to neutrinos, however since the SM does not contain right-handed neutrinos, no such Yukawa interaction can be built for neutrinos, which are consequently massless.
 
 In order to generate neutrino masses then we have to go beyond the Standard Model, adding an arbitrary number of sterile neutrinos.
-One possible solution is to introduce three new sterile (right-handed) neutrinos so that neutrinos acquire mass through the usual Yukawa mechanism.  However, since values of neutrino masses are many order of magnitude smaller than those of other fermions it is very unlikely they have a common SM Higgs origin.
+One possible solution is to introduce three new sterile (right-handed) neutrinos so that neutrinos can acquire mass through the usual Yukawa mechanism.  However, since values of neutrino masses are many order of magnitude smaller than those of other fermions, it is very unlikely they have a common SM Higgs origin.
 
-If neutrinos are Dirac particles total lepton number \emph{L} is conserved, and neutrino $\nu$ and antineutrino $\bar{\nu}$ have lepton number respectively  $L(\nu)=+1$ and $L(\bar{\nu})=-1$.
-For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos through any quantum number.
+If neutrinos are Dirac particles total lepton number \emph{L} is conserved: neutrinos $\nu$ and antineutrinos $\bar{\nu}$ have lepton number respectively  $L(\nu)=+1$ and $L(\bar{\nu})=-1$.
+For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos on the basis of any quantum number.
 
 \subsubsection{Higgs mechanism for fermion masses}
 Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev) $v$: 
@@ -175,7 +175,7 @@ Lagrangian (\ref{eq:ElectronLag}) then becomes
 \end{equation}
 Here we can make the identification $m_e=g_ev/\sqrt{2}$ which gives as the electron mass.
 
-For neutrinos in principle the same mechanism is valid, so that we start from the Lagrangian
+For neutrinos in principle the same mechanism is valid, provided that RH neutrinos have been introduced. We thus start from the Lagrangian
 \begin{equation}
 \label{eq:nuLag}
 \mathcal{L}_Y^{\nu_e}(x)=-g_{\nu_e}(\bar{\psi}_{eL}\phi_C \nu_{eR}+\bar{\nu}_{eR}\phi_C \psi_{eL})
@@ -189,7 +189,7 @@ is the charge conjugated field. Through SSB we obtain $\phi_C(x)=\begin{pmatrix}
 \label{eq:nuMassLag}
 \mathcal{L}_Y^{\nu_e}(x)=-\frac{g_{\nu_e}}{\sqrt{2}}v(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})-\frac{g_{\nu_e}}{\sqrt{2}}(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})H(x)
 \end{equation}
-so that finally we obtained a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$
+so that finally we get a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$
 \begin{equation}
 \mathcal{L}_{mass}^{\nu_e}=-m_{\nu_e}\bar{\nu}_{eL}\nu_{eR}+h.c.
 \end{equation}
@@ -199,9 +199,9 @@ It is easy to check that the Standard Model Lagrangian with Yukawa interaction (
 \nu_{eL}(x)\rightarrow e^{i\theta}\nu_{eL}(x),\quad\nu_{eR}(x)\rightarrow e^{i\theta}\nu_{eR}(x),
 \quad e_L(x)\rightarrow e^{i\theta}e_L(x),\quad e_R(x)\rightarrow e^{i\theta}e_R(x)
 \]
-where $\theta$ is an arbitrary constant. Thus in the SM with massive neutrinos the total lepton number L is conserved  \emph{and $\nu_i(x)$ is the Dirac field of neutrinos (L=1) and antineutrinos (L=-1)}.
+where $\theta$ is an arbitrary constant. Thus in the SM with massive neutrinos the total lepton number L is conserved and \emph{$\nu(x)$ is the Dirac field of neutrinos (L=1) and antineutrinos (L=-1)}.
 
-Although this mechanism of generation of neutrino masses is legitimate, if we look at the value of the Yukawa coupling $g_{\nu_e}$ it is many order of magnitudes smaller than the couplings for the other fermions \cite{ref:Bil}:
+Although this mechanism of generation of neutrino masses is legitimate, if we look at the value of the Yukawa coupling $g_{\nu_e}$, it is many order of magnitudes smaller than the couplings for the other fermions \cite{ref:Bil}:
 \[
 2\cdot10^{-13}\leq g_{\nu_e}\leq10^{-12} \quad \text{while}\quad g_t\simeq7\cdot10^{-1}, g_b\simeq2\cdot10^{-2}, g_{\tau}\simeq7\cdot10^{-3}
 \]
@@ -245,16 +245,16 @@ where $\nu_i$ are mass eigenstates with eigenvalues $m_i$.
 \begin{equation}
 \nu_i=\sum_lU_{il}^{\dagger}\nu_{lL}+\sum_l\bigl(U_{il}^{\dagger}\nu_{lL}\bigr)^c
 \end{equation}
-It's straightforward to verify that field $\nu_i$ satisfies Majorana condition $\nu_i=\nu_i^c$, and that the flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. 
+It's straightforward to verify that the field $\nu_i$ satisfies Majorana condition $\nu_i=\nu_i^c$, and that the flavor neutrino fields $\nu_{lL}$ are given by a superposition of mass eigenstates $\nu_i$, whose contributions are weighted by coefficients $U_{il}$. 
 \begin{equation}
 \label{eq:nuMix}
 \nu_{lL}=\sum_{i=1}^3U_{li}\nu_{iL}
 \end{equation}
-The matrix \emph{U} is called PMNS matrix.
+The matrix \emph{U} is called Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix.
 
 \subsubsection{Weinberg effective Lagrangian}
 In order to generate a Majorana mass term like (\ref{eq:MajLag}) Weinberg proposed a beyond the SM mechanism based on the effective Lagrangian approach.
-Since we are dealing only with left-handed neutrino field $\nu_{L}$ instead of the lepton doublet $\psi_{L}$, it is not possible to generate Majorana masses through the usual coupling with the Higgs field and the subsequent symmetry breaking. 
+Obviously it is not possible to generate Majorana masses through the usual coupling with the Higgs field and the subsequent symmetry breaking. 
 One way to proceed is through the $SU_L(2)\times U_Y(1)$ invariant
 \begin{equation}
 \label{eq:LorInv}
@@ -271,9 +271,9 @@ From (\ref{eq:LorInv}) the only possible effective Lagrangian which generates ne
 \end{equation}
 where $X$ is a symmetrical, non diagonal matrix.
 The factor $1/\Lambda$, having dimension $M^{-1}$, has been introduced since the mass dimension of (\ref{eq:EffLag}) is five, while a Lagrangian should have mass dimension four.
-The parameter $\Lambda$ is important since it represents some heavy new physics which has been integrated out, such as the exchange of a very heavy Majorana sterile neutrino.
+The parameter $\Lambda$ is important since it represents some heavy new physics which has been integrated out, such as the exchange of a very heavy Majorana sterile neutrino (see Section \ref{sec:ss}).
 
-After SSB Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
+After SSB, from Lagrangian (\ref{eq:EffLag}) the following neutrino mass term emerges
 \begin{equation}
 \label{eq:EffMass}
 \mathcal{L}^M=-\frac{v^2}{2\Lambda}\bar{\nu}_{L}X\nu_{L}^c+h.c.
@@ -296,23 +296,26 @@ is the field of  Majorana neutrino with mass
 \begin{equation}
 \label{eq:neutMass}
 m_{i}=\frac{v}{\Lambda}(vx_i)
-\end{equation}.
+\end{equation}
 
 From (\ref{eq:neutMass}) we see that neutrino masses are characterized by the two parameters \emph{v} and $\Lambda$: this can  provides an explanation for the smallness of neutrino masses with respect to other fermions. The suppression is by a factor
 \begin{equation}
 \frac{v}{\Lambda}=\frac{\text{EW scale}}{\text{scale of a new physics}}
 \end{equation}
 which is naturally much smaller than one.
-If we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\times10^{-2}\SI{}{eV}$ and $x_3\leq1$ (although parameters $x_i$ are unknown) we obtain the estimate $\Lambda\leq10^{15}\SI{}{GeV}$~\cite{ref:Bil}.
+Indeed, if we assume the mass of the heaviest neutrino (mass) field to be $m_3\simeq5\times10^{-2}\SI{}{eV}$ and $x_3\leq1$ (although parameters $x_i$ are unknown) we obtain the estimate $\Lambda\leq10^{15}\SI{}{GeV}$~\cite{ref:Bil}.
 
-\subsubsection{Type-I Seesaw mechanism}
+In the following section I will show how to produce the Weinberg effective Lagrangian through the so called Seesaw mechanism, which however is not the only possible method that can be adopted, as we'll see.
+
+\subsection{Type-I Seesaw mechanism}
+\label{sec:ss}
 The Standard Model for three generations of neutrinos can be extended to contain \emph{m} right-handed neutrinos $\nu_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{\nu_R}$ 
 \begin{equation}
 \label{eq:renormLag}
 \mathcal{L}=i\bar{\nu}_L\gamma^{\mu}\partial_{\mu}\nu_L+i\bar{\nu}_R\gamma^{\mu}\partial_{\mu}\nu_R-\bar{\nu}_LM_D\nu_R-\frac{1}{2}\bar{\nu}^c_LM_L\nu_L-\frac{1}{2}\bar{\nu}_R^cM_R\nu_R+h.c.
 \end{equation}
 It contains a $m\times3$ complex Dirac mass matrix $M_D$ together with Majorana mass matrices $M_L$ and $M_R$ for left-handed and right-handed neutrinos, which are respectively $m\times m$ and $3\times3$ symmetric matrices \cite{ref:Fuji}. 
-Notice that Majorana mass terms are not produced through Higgs mechanism and SSB.
+Notice that Majorana mass terms are not produced through SM Higgs mechanism and SSB.
 Writing the complete mass term for $3+m$ neutrino generations results in 
 \begin{equation}
 \mathcal{L}_{mass}=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}M_L & M_D\\ M_D^T & M_N\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
@@ -321,7 +324,7 @@ where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. Since the Majora
 \begin{equation}
 U^T\begin{pmatrix}0 & M_D\\ M_D^T & M_R\end{pmatrix}U=\begin{pmatrix}M_l & 0 \\ 0 & M_h\end{pmatrix}
 \end{equation}
-$M_l$ and $M_h$ are $3\times3$ and $m\times m$ real diagonal matrices. If the mass eigenvalues of $M_R$ are much higher than the scale of electroweak symmetry breaking \emph{v}, we obtain three light neutrinos $\nu_l$ and \emph{m} heavy neutrinos, \emph{N}.
+where $M_l$ and $M_h$ are $3\times3$ and $m\times m$ real diagonal matrices. If the mass eigenvalues of $M_R$ are much higher than the scale of electroweak symmetry breaking \emph{v}, we obtain three light neutrinos $\nu_l$ and \emph{m} heavy neutrinos, \emph{N}.
 \begin{equation}
 \mathcal{L}_{mass}=-\frac{1}{2}\bar{\nu}_lM^l\nu_l-\frac{1}{2}\bar{N}M^hN
 \end{equation}
@@ -367,7 +370,7 @@ This process could be observed whether other possible decay channels are forbidd
 \caption{$0\nu\beta\beta$-decay.}
 \vspace{-10pt}
 \end{wrapfigure}
- This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum.The decay has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Figure~\ref{fig:Nspectrum}.
+This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum. The decay has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Figure~\ref{fig:Nspectrum}.
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{Nspectrum.png}
@@ -401,7 +404,7 @@ A particular focus has to be set on the effective Majorana mass
 \label{eq:BBmass}
 m_{\beta\beta}=\sum_{i=1}^3U_{ek}^2m_k=|c_{12}^2c_{13}^2e^{2i\alpha_1}m_1+c_{13}^2s_{12}^2e^{2i\alpha_2}m_2+s_{13}^2m_3|
 \end{equation}
-since it depends on neutrino masses (still unknown) and on the matrix elements of the PMNS matrix, which are extracted from neutrino oscillation experiments.
+since it depends on neutrino masses (still unknown) and on the matrix elements of the PMNS matrix (\ref{eq:pmns}), which are extracted from neutrino oscillation experiments.
 
 Studying solar neutrinos we get $\Delta m_S^2\equiv\Delta m_{12}^2>0$, while from atmospheric neutrino experiments $\Delta m_A^2$ is derived.
 At this point however there are two possibilities, since we don't know values of neutrino masses but only their squared differences:
@@ -426,6 +429,7 @@ m_1=\sqrt{m_3^2+\Delta m_A^2} \qquad m_2=\sqrt{m_3^2+\Delta m_S^2+\Delta m_A^2}
 
 For what concerns the PMNS matrix, if we are dealing with Dirac neutrinos it is characterized by three mixing angles $\theta_{12}, \theta_{23}, \theta_{13}$ and one phase $\delta$. In the standard parametrization it has the form
 \begin{equation}
+\label{eq:pmns}
 U^D=\begin{pmatrix}c_{13}c_{12}&c_{13}s_{12}&s_{13}e^{-i\delta}\\-c_{23}s_{12}-s_{23}c_{12}s_{13}e^{i\delta}&c_{23}c_{12}-s_{23}s_{12}s_{13}e^{i\delta}&c_{13}s_{23}\\s_{23}s_{12}-c_{23}c_{12}s_{13}e^{i\delta}&-s_{23}c_{12}-c_{23}s_{12}s_{13}e^{i\delta}&c_{13}c_{23}\end{pmatrix}
 \end{equation}
 where $c_{ij}\equiv cos(\theta_{ij})$ and $s_{ij}\equiv sin(\theta_{ij})$.
@@ -436,7 +440,7 @@ U^M=U^DS^M(\alpha)
 \end{equation}
 where
 \begin{equation}
-s^M(\alpha)=\begin{pmatrix}e^{i\alpha_1}&0&0\\0&e^{i\alpha_2}&0\\0&0&1\end{pmatrix}
+S^M(\alpha)=\begin{pmatrix}e^{i\alpha_1}&0&0\\0&e^{i\alpha_2}&0\\0&0&1\end{pmatrix}
 \end{equation}
 These two complex phases $\alpha_{1,2}$ however cannot be measured.
 
@@ -458,7 +462,7 @@ In the table below values of the oscillation parameters in case of NO (IO) can b
 \bottomrule
 \end{array}
 \]
-The effective Majorana mass is strongly dependent on the neutrino mass spectrum. Starting from Eq. (\ref{eq:BBmass}) and experimental values of oscillation parameters we can derive upper and lower bounds for $m_{\beta\beta}$~\cite{ref:ver}.
+The effective Majorana mass is strongly dependent on the neutrino mass spectrum. Starting from Eq. (\ref{eq:BBmass}) and experimental values of oscillation parameters, we can derive upper and lower bounds for $m_{\beta\beta}$~\cite{ref:ver}.
 \begin{itemize}
 \item For Normal Ordering the following approximation is valid
 	\begin{equation}
@@ -497,12 +501,12 @@ The search for $0\nu\beta\beta$-decay is carried out through several large scale
 Experiments we are going to quickly discuss in the following sections use four different target materials: Xenon-136 (EXO and KamLAND-Zen), Germanium-76 (GERDA), Tellurium-130 (CUORE) and Selenium-82 (Cupid-0).
 
 \subsubsection{EXO}
-The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) near Carlsbad in New Mexico (USA), at a depth of about \SI{1624}{m} water equivalent.
+The Enriched Xenon Observatory is an experiment in operation at the Waste Isolation Pilot Plant (WIPP) near Carlsbad in New Mexico (USA), at a depth of about \SI{1624}{m} of water equivalent.
 The current experiment EXO-200 consists of \SI{200}{Kg} of liquid Xenon (LXe) enriched to 80.6\% in \ce{^{136}Xe} isotope.  It was the first experiment to observe double beta decay in Xenon ($T_{1/2}\sim 2\cdot10^{21}\SI{}{yr}$).
 The LXe fills a TPC vessel, so that when a charged particle traverses it, a signal is produced through ionization. The ions drift towards the wire grids, which provide a 2D location. Scintillation light is also produced. The third coordinate is reconstructed from the time difference between light signal and ionization signal. The amount of light is proportional to the event's energy.
 
-Xenon-36 has a Q-value of \SI{2458}{keV} and therefore gamma rays from naturally-occurring radioactive isotopes are a background that can make the $0\nu\beta\beta$-decay difficult or impossible to detect.
-However, we are able to achieve great energy resolution through collecting both ionization electrons and scintillation light from Xenon and furthermore tagging of the daughter Barium ions in principle could allow for complete background rejection.
+Xenon-136 has a Q-value of \SI{2458}{keV} and therefore gamma rays from naturally-occurring radioactive isotopes are a background that can make the $0\nu\beta\beta$-decay difficult or impossible to detect.
+However, we are able to achieve great energy resolution through collecting both ionization electrons and scintillation light from Xenon; furthermore tagging of the daughter Barium ions in principle could allow for complete background rejection.
 
 In December 2018 EXO-200 completed data taking with the upgraded detector ("Phase II", May 2016 to December 2018) after collecting a total exposure of \SI{234.1}{Kg\cdot yr}, similar to that of its first run ("Phase I", September 2011 to February 2014).
 The lower limit on the \ce{^{136}Xe} $0\nu\beta\beta$ half-life is $T_{1/2}>1.7\cdot10^{25}\SI{}{yr}$ ($T_{1/2}>4.3\cdot10^{25}\SI{}{yr}$) at 90\% CL in Phase I (Phase II), whereas the combined limit is $T_{1/2}>3.5\cdot10^{25}\SI{}{yr}$. From these results the upper limit on the Majorana mass is $\langle m_{\beta\beta}\rangle<(93-286)\SI{}{meV}$ \cite{ref:exo}.
@@ -545,22 +549,22 @@ The further improvement of the detector will lead to KamLAND2-Zen, which will us
 
 \subsubsection{GERDA}
 The GERmanium Detector Array experiment worked with high-purity germanium detectors made out of material enriched in \ce{^{76}Ge} to $\sim87\%$. It is located at the Laboratori Nazionali del Gran Sasso (LNGS) of INFN, Italy,  under \SI{3500}{m} of water equivalent of rock.
-One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signal. Its Q-value is \SI{2039.06}{keV}.
+One of the advantage in using germanium detectors is their energy resolution, which guarantees a very clear signature of $0\nu\beta\beta$-decay signals. Its Q-value is \SI{2039.06}{keV}.
 \begin{figure}
 \centering
 \includegraphics[width=0.95\textwidth]{GERDA.png}
 \caption{Experimental setup for the GERDA detector \cite{ref:gerLay}.}
 \label{fig:GerLayout}
 \end{figure}
-In Figure~\ref{fig:GerLayout} the set up of the detector is displayed; The core of the experiment is an array of broad energy germanium (BEGe) detectors suspended in strings into a cryostat filled with liquid Argon (LAr), which provides both shielding and cooling.
-The cryostat is surrounded by a water tank equipped with photomultimpliers to detect the residual cosmic muons (not stopped by the rock). The muon veto system is complemented by scintillators panels on the top of the clean room.
+In Figure~\ref{fig:GerLayout} the set up of the detector is displayed; the core of the experiment is an array of broad energy germanium (BEGe) detectors suspended in strings into a cryostat filled with liquid Argon (LAr), which provides both shielding and cooling.
+The cryostat is surrounded by a water tank equipped with photomultimpliers to detect the residual cosmic muons (not stopped by the rock). The muon veto system is complemented by scintillator panels on the top of the clean room.
 A cylindrical volume around the array is instrumented with photosensors, in order to detect scintillation light in the LAr.
 
-In this experiment detector and the source coincide, maximizing the detection efficiency.
-The two electrons emitted in a double $\beta$-decay have a range in germanium of the order of \SI{1}{mm}: they deposit their energy in a small volume of the detector and thus produce highly localized events. In contrast, $\gamma$ rays of similar energy mostly interact via Compton scattering and can produce events with several separated energy depositions. Events in which more than one germanium detectors is fired are therefore identified as background.
+In this experiment detector and source coincide, maximizing the detection efficiency.
+The two electrons emitted in double $\beta$-decay have a range in germanium of the order of \SI{1}{mm}: they deposit their energy in a small volume of the detector and thus produce highly localized events. In contrast, $\gamma$ rays of similar energy mostly interact via Compton scattering and can produce events with several separated energy depositions. Events in which more than one germanium detector is fired are therefore identified as background.
 
 Phase I of GERDA collected \SI{23.5}{Kg\cdot yr} of exposure between November 2011 and September 2013. After an overall upgrade GERDA Phase II started data acquisition in December 2015 until November 2019, with a total exposure of \SI{103.7}{Kg\cdot yr}.
-The analysis of Phase II data yields no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I and II , with a total exposure of \SI{127.2}{Kg\cdot yr}, led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL.
+The analysis of Phase II data yielded no indication of $0\nu\beta\beta$-decay and set a lower limit of $T_{1/2}>1.5\cdot10^{26}\SI{}{yr}$ at 90\% CL. Combining all the results from Phase I and II , with a total exposure of \SI{127.2}{Kg\cdot yr}, led to $T_{1/2}>1.8\cdot10^{26}\SI{}{yr}$ at 90\% CL.
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Tgerda.png}
@@ -577,11 +581,11 @@ It is based on the infrastructure of the CUORE experiment (also at LNGS), which 
 
 A blometer consists of a crystal operating as a cryogenic calorimeter, around \SI{0.01}{K}. At this temperature a minimum energy release in it produces a temperature variation. By measuring this thermal variation it is possible to reconstruct the energy released.
 
-CUORE used a detector made of 988 \ce{TeO2} crystals, which have important characteristic of emitting very faint light signals, together with the production of heat signals. The emitted light is measured by dedicated (bolometric) detectors, able to work at cryogenic temperatures. In this way the natural background radiation (e.g. $\alpha$ particles) can be reduced.
+CUORE used a detector made of 988 \ce{TeO2} crystals, which have the important characteristic of emitting very faint light signals, together with the production of heat signals. The emitted light is measured by dedicated (bolometric) detectors, able to work at cryogenic temperatures. In this way the natural background radiation (e.g. $\alpha$ particles) can be reduced.
 The choice of Tellurium was made since it has a Q-value for $0\nu\beta\beta$-decay of \SI{2527.518}{keV}, above most of the natural radioactive background \cite{ref:cuore}.
 
-CUPID will increase the active mass, through isotopic enrichment and also decrease the background by two orders of magnitude with respect to CUORE. The experiment used \ce{^{82}Se}, which has one of the highest Q-values for $0\nu\beta\beta$-decay (\SI{2997.9}{keV}). This choice allows to work in a region barely affected by the $\beta/\gamma$ background from natural radioactivity.
-Selenium was used to grow 24 cylindrical \ce{Zn^{82}Se} crystals 95\% enriched in \ce{^{82}Se}, arranged in five towers (see Figure~\ref{fig:cupid}).
+CUPID increased the active mass, through isotopic enrichment and also decreased the background by two orders of magnitude with respect to CUORE. The experiment used \ce{^{82}Se}, which has one of the highest Q-values for $0\nu\beta\beta$-decay (\SI{2997.9}{keV}). This choice allows to work in a region barely affected by the $\beta/\gamma$ background from natural radioactivity.
+Selenium was used to grow 24 cylindrical \ce{Zn^{82}Se} crystals 95\% enriched in \ce{^{82}Se}and arranged in five towers (see Figure~\ref{fig:cupid}).
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{cupid.png}
@@ -590,7 +594,7 @@ Selenium was used to grow 24 cylindrical \ce{Zn^{82}Se} crystals 95\% enriched i
 \end{figure}
 The CUPID-0 detector has been taking data from June 2017 to December 2018, collecting a \ce{^{82}Se} exposure of \SI{5.29}{Kg\cdot yr}. The extrapolated limit on the half-life for $0\nu\beta\beta$-decay in Selenium was $T_{1/2}>3.5\cdot10^{24}\SI{}{yr}$ corresponding to $m_{\beta\beta}<(311-638)\SI{}{meV}$ \cite{ref:cupid}. 
 
-CUORE experiment after a total exposure of \SI{372.5}{Kg\cdot yr} obtained a 90\% CL lower limit of $3.2\cdot10^{25}\SI{}{yr}$, which leads to an upper limit for the effective Majorana mass of $(75-350)\SI{}{meV}$ \cite{ref:cuore}.
+CUORE experiment after a total exposure of \SI{372.5}{Kg\cdot yr} obtained a 90\% CL lower limit of $3.2\cdot10^{25}\SI{}{yr}$, which led to an upper limit for the effective Majorana mass of $(75-350)\SI{}{meV}$ \cite{ref:cuore}.
 
 \section{Collider experiments}
 We just discussed about several experiments which are trying to observe $0\nu\beta\beta$-decay. Complementary to them are on-going searches for lepton number violating processes at collider experiments, such as LEP, Belle, LHCb and ATLAS/CMS.
@@ -611,14 +615,13 @@ For Majorana neutrinos with $M_N>M_W$ the most studied production mechanism at p
 \caption{Born diagram for heavy neutrino production via Drell-Yan process (for Type-I seesaw)  \cite{ref:front}.}
 \label{fig:DY}
 \end{figure}
-The Type-II seesaw is characterized by heavy SU(2) triplet scalars, which result in new singly- and doubly-charged Higgs bosons. They can be copiously produced in pairs via SM electroweak gauge interactions if kinematically accessible at collider energies.
+The Type-II seesaw instead is characterized by heavy SU(2) triplet scalars, which result in new singly- and doubly-charged Higgs bosons. They can be copiously produced in pairs via SM electroweak gauge interactions if kinematically accessible at collider energies.
 For more details see \cite{ref:front}. 
 
 \section{Summary and Conclusions}
-Since neutrinos are not massless, it is clear that the Standard Model has to be extended. So far we discussed about different way to generate neutrino masses. The most straightforward method is to use the ordinary SM Higgs mechanism, which implies the introduction of right handed neutrino fields. In this case neutrinos are called Dirac particles. The resulting couplings however are much smaller than those for the other fermions, making this method very improbable.
+Since neutrinos are not massless, it is clear that the Standard Model has to be extended. So far we discussed about different ways to generate neutrino masses. The most straightforward method is to use the ordinary SM Higgs mechanism, which implies the introduction of right handed neutrino fields. In this case neutrinos are called Dirac particles. The resulting couplings however are much smaller than those for the other fermions, making this method very improbable.
 
-The second possibility instead is to consider neutrinos as Majorana particles, i.e. particles which correspond to their antiparticles. It is a more economic choice since avoids the introduction of further degrees of freedom.
-Despite the propensity toward this second option there is no experimental indication in either direction. The crucial evidence would be the observation of a lepton number violating process. Indeed, this would imply that neutrinos are Majorana particles.
+The second possibility instead is to consider neutrinos as Majorana particles, i.e. particles which correspond to their antiparticles. Despite the propensity toward this second option there is no experimental indication in either direction. The crucial evidence would be the observation of a lepton number violating process. Indeed, this would imply that neutrinos are Majorana particles.
 
 One of the main branch of research in this field is devoted to observe the neutrinoless double beta decay, in which lepton number is violated by two units. So far, experiments were able only to fix lower limits on the half-life for $0\nu\beta\beta$-decay in different nuclei.
 A different attempt is made by collider experiments, with poor results for the moment.
