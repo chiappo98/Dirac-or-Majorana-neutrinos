@@ -49,7 +49,7 @@ This energy instead corresponds only to the maximum electron energy of Figure~\r
 \end{figure}
 
 The problem of the missing energy could be solved introducing a new particle, which had to be neutral to conserve electric charge and extremely light, from the fact that the observed electron energies range up to the value given in equation (\ref{eq:Emax}).
-Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (see section \ref{sec:prod}).
+Fermi called this particle \emph{neutrino}, which was finally discovered in 1956 by Cowan and Reines at the Savannah River nuclear reactor in South Carolina, where they set up a large tank of water and watched for inverse beta decay reactions (\ref{eq:inverse}).
 
 Today we know the existence of three flavors of neutrinos, associated to the corresponding charged leptons, as shown in Table~\ref{tab:classification}~\cite{ref:cott}.
 \begin{table}[H]
@@ -76,14 +76,16 @@ An interesting feature of weak interactions is that they do not conserve parity.
 \subsection{Neutrinos production and interaction}
 \label{sec:prod}
 Neutrinos are produced in leptonic (\ref{eq:Lep}) and semileptonic decays (\ref{eq:semiL1} - \ref{eq:semiL3}) of particles involving weak interactions, such as the ones shown below, but also in weak decays of unstable atomic nuclei. 
-\begin{eqnletter}
-\label{eq:lep}
-\mu^- &\rightarrow& e^-+\bar{\nu}_e+\nu_\mu \label{eq:Lep}\\
-\pi^+ &\rightarrow& \mu^++\nu_\mu \label{eq:semiL1}\\
-K^+ &\rightarrow& \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
-&\hookrightarrow& \pi^0+e^++\bar{\nu}_e \label{eq:semiL3}
-\end{eqnletter}
-On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin, due to the interaction of cosmic rays with the atmosphere. However they are copiously produced also in nuclear power plants, which are often used as neutrino sources for particle physics experiments.
+\begin{gather}
+%\label{eq:lep}
+\mu^- \rightarrow e^-+\bar{\nu}_e+\nu_\mu \qquad \mu^+ \rightarrow e^++\nu_e+\bar{\nu}_\mu \label{eq:Lep}\\
+\pi^- \rightarrow \mu^-+\bar{\nu}_\mu \qquad \pi^+ \rightarrow \mu^++\nu_\mu \label{eq:semiL1}
+\end{gather}
+\begin{align}
+K^+ &\rightarrow \pi^0+\mu^++\nu_\mu \label{eq:semiL2}\\
+&\hookrightarrow \pi^0+e^++\bar{\nu}_e \label{eq:semiL3}
+\end{align}
+On Earth the flux of neutrinos is dominated by Solar neutrinos, produced in fusion processes inside the Sun, and neutrinos of atmospheric origin. Due to the interaction of cosmic rays with the atmosphere pions are produced, which than decay according to (\ref{eq:semiL1}) and (\ref{eq:Lep}). However they are copiously produced also in nuclear power plants, which are often used as neutrino sources for particle physics experiments.
 
 Weak processes can be classified in charged current (CC) and neutral current (NC) interactions, whether or not there is a change in the electric charge between initial and final states. CC interactions are mediated by the charged $W^-$ and $W^+$ bosons, while NC interaction by the $Z$ boson, which is neutral.
 These mediators are massive \cite{ref:pdgBos}:
@@ -97,6 +99,7 @@ Being neutral leptons, neutrinos interact only through weak interactions and hen
 On the other side they are very useful to study weak interactions, since the weak transition amplitude of processes in which they are involved is not overcame by strong or electromagnetic amplitudes.
 Neutrinos can be detected through the inverse beta decay interaction
 \begin{equation}
+\label{eq:inverse}
 \bar{\nu}_e+p \rightarrow e^++n
 \end {equation}
 that is, observing the emitted charged lepton.
@@ -116,7 +119,7 @@ Neutrino oscillations i.e. electron neutrinos turning into muon and tau neutrino
 
 \section{Theory}
 \subsection{Dirac neutrinos}
-Fermion fields in the SM are described by the Dirac equation 
+A massive fermion field in the SM is described by the Dirac equation 
 \begin{equation}
 \label{eq:dir}
 (i\gamma^{\mu}\partial_{\mu}-m)\psi=0
@@ -153,7 +156,7 @@ If neutrinos are Dirac particles total lepton number \emph{L} is conserved: neut
 For Majorana neutrinos instead L is not conserved and it's not possible to distinguish neutrinos from antineutrinos on the basis of any quantum number.
 
 \subsubsection{Higgs mechanism for fermion masses}
-Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton SU(2) doublet to a scalar field, which then acquires a vacuum expectation value (vev) $v$: 
+Generation of fermion masses through the standard Higgs mechanism requires the introduction of a Yukawa-type coupling of the lepton $SU_L(2)$ doublet to a scalar field, which then acquires a vacuum expectation value (vev) $v$: 
 \begin{equation}
 \label{eq:ElectronLag}
 \mathcal{L}_Y^e(x)=-g_e(\bar{\psi}_{eL}\phi e_R+\bar{e}_R\phi \psi_{eL}) 
@@ -168,12 +171,12 @@ We spontaneously break the symmetry choosing
 \begin{equation}
 \phi(x)=\begin{pmatrix}0\\ \frac{v+H(x)}{\sqrt{2}}\end{pmatrix}
 \end{equation}
-with $v=(\sqrt{2}G_F)^{-1/2}\simeq246GeV$ which is the vev of the Higgs field \cite{ref:Halzen}.
+with $v=(\sqrt{2}G_F)^{-1/2}\simeq\SI{246}{GeV}$ which is the vev of the Higgs field \cite{ref:Halzen}.
 Lagrangian (\ref{eq:ElectronLag}) then becomes
 \begin{equation}
 \mathcal{L}_Y^e(x)=-\frac{g_e}{\sqrt{2}}v(\bar{e}_Le_R+\bar{e}_Re_L)-\frac{g_e}{\sqrt{2}}(\bar{e}_Le_R+\bar{e}_Re_L)H(x)
 \end{equation}
-Here we can make the identification $m_e=g_ev/\sqrt{2}$ which gives as the electron mass.
+Here we can make the identification $m_e=g_ev/\sqrt{2}$ which gives us the electron mass.
 
 For neutrinos in principle the same mechanism is valid, provided that RH neutrinos have been introduced. We thus start from the Lagrangian
 \begin{equation}
@@ -189,7 +192,7 @@ is the charge conjugated field. Through SSB we obtain $\phi_C(x)=\begin{pmatrix}
 \label{eq:nuMassLag}
 \mathcal{L}_Y^{\nu_e}(x)=-\frac{g_{\nu_e}}{\sqrt{2}}v(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})-\frac{g_{\nu_e}}{\sqrt{2}}(\bar{\nu}_{eL}\nu_{eR}+\bar{\nu}_{eR}\nu_{eL})H(x)
 \end{equation}
-so that finally we get a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$
+Finally we get a (Dirac) mass for the neutrino, setting $g_{\nu_e}v/\sqrt{2}=m_{\nu_e}$
 \begin{equation}
 \mathcal{L}_{mass}^{\nu_e}=-m_{\nu_e}\bar{\nu}_{eL}\nu_{eR}+h.c.
 \end{equation}
@@ -216,7 +219,7 @@ Another possibility is the method of the effective Lagrangian which, after SSB g
 As we saw, Dirac mechanism for neutrino masses is not a completely exhaustive model.
 A new beyond-the-Standard Model theory has been developed trying to account for neutrino masses generation in a more natural way. To be precise there is not a single theory but many \cite{ref:Bronc}\cite{ref:Bil}\cite{ref:front}. 
 One of the most popular is the Weinberg effective Lagrangian: it allows the introduction of neutrino masses using only left-handed (Majorana) neutrino fields.
-The advantage of this model is that it minimizes the number of degrees of freedom required, since there is no need for right-handed neutrino fields $\nu_{R}$.
+%The advantage of this model is that it minimizes the number of degrees of freedom required, since there is no need for right-handed neutrino fields $\nu_{R}$.
 
 In order to build a Lorentz invariant mass term, a product of left-handed and right-handed components is required; this is achieved by the fact that the charge conjugated field
 \begin{equation}
@@ -307,7 +310,7 @@ Indeed, if we assume the mass of the heaviest neutrino (mass) field to be $m_3\s
 
 In the following section I will show how to produce the Weinberg effective Lagrangian through the so called Seesaw mechanism, which however is not the only possible method that can be adopted, as we'll see.
 
-\subsection{Type-I Seesaw mechanism}
+\section{Type-I Seesaw mechanism}
 \label{sec:ss}
 The Standard Model for three generations of neutrinos can be extended to contain \emph{m} right-handed neutrinos $\nu_R$ building a gauge invariant renormalizable Lagrangian $\mathcal{L}=\mathcal{L}_{SM}+\mathcal{L}_{\nu_R}$ 
 \begin{equation}
@@ -320,17 +323,20 @@ Writing the complete mass term for $3+m$ neutrino generations results in
 \begin{equation}
 \mathcal{L}_{mass}=-\frac{1}{2}\begin{pmatrix}\bar{\nu}_L \bar{\nu}_R^c\end{pmatrix}\begin{pmatrix}M_L & M_D\\ M_D^T & M_N\end{pmatrix}\begin{pmatrix}\nu_L^c\\ \nu_R\end{pmatrix}+h.c.
 \end{equation}
-where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. Since the Majorana mass term for LH neutrinos is forbidden from SM gauge invariance, it is physically reasonable to choose $M_L=0$. The mass matrix can be diagonalized by unitary matrix $U$ of dimension $3+m$ to give 
+where $\nu=(\nu_L, \nu_R^c)^T$ is a $(3+m)$-dimensional vector. Since the Majorana mass term for LH neutrinos is forbidden from SM gauge invariance, it is physically reasonable to choose $M_L=0$. 
+
+The mass matrix can be diagonalized by unitary matrix $U$ to give $3+m$ mass eigenstates. If the mass eigenvalues of $M_R$ are much higher than the scale of electroweak symmetry breaking \emph{v}, we obtain three light neutrinos $\nu_l$ and \emph{m} heavy neutrinos, \emph{N}.
 \begin{equation}
 U^T\begin{pmatrix}0 & M_D\\ M_D^T & M_R\end{pmatrix}U=\begin{pmatrix}M_l & 0 \\ 0 & M_h\end{pmatrix}
 \end{equation}
-where $M_l$ and $M_h$ are $3\times3$ and $m\times m$ real diagonal matrices. If the mass eigenvalues of $M_R$ are much higher than the scale of electroweak symmetry breaking \emph{v}, we obtain three light neutrinos $\nu_l$ and \emph{m} heavy neutrinos, \emph{N}.
 \begin{equation}
 \mathcal{L}_{mass}=-\frac{1}{2}\bar{\nu}_lM^l\nu_l-\frac{1}{2}\bar{N}M^hN
 \end{equation}
+where $M_l$ and $M_h$ are $3\times3$ and $m\times m$ real diagonal matrices.
+
 In this way values for LH neutrino masses compatible with experimental bounds are obtained. Notice that this does not imply that $M_D$ has to be small compared to the electroweak scale, and thus the unnaturally small coupling $g_{\nu}$ is avoided.
 
-Weinberg effective Lagrangian arises naturally from Lagrangian (\ref{eq:renormLag}) by integrating out the heavy Majorana neutrino fields $\nu_{R}$ and performing a power series expansion in $1/M_R$ of the form
+Weinberg effective Lagrangian arises naturally from Lagrangian (\ref{eq:renormLag}) by integrating out the heavy Majorana neutrino fields $N$ and performing a power series expansion in $1/M_R$ of the form
 \begin{equation}
 \mathcal{L}_{eff}=\mathcal{L}_{SM}+\frac{1}{M_R}\mathcal{L}^{d=5}+\frac{1}{M_R^2}\mathcal{L}^{d=6}+\dots
 \equiv \mathcal{L}_{SM}+\delta\mathcal{L}^{d=5}+\delta\mathcal{L}^{d=6}+\dots
@@ -341,7 +347,7 @@ The SM is an effective theory which properly describes the physics at energies b
 
 \subsubsection{Light sterile neutrinos}
 It could be that some $n_s<m$ eigenvalues of the Majorana matrix $M_R$ are not higher than the electroweak scale; in this case there will be additional $n_s$ light states and we will have $3+n_s$ light neutrinos.
-Indications in favor of sterile neutrinos were obtained in different short baseline experiments, such as LSND and MiniBooNE, where some anomalies were observed which cannot be explained by the three-flavor oscillation model.
+Indications in favor of light sterile neutrinos were obtained in different short baseline experiments, such as LSND and MiniBooNE. They observed some anomalies which were not in agreement with the three-flavor oscillation model.
 The existing data could be explained through the introduction of a fourth massive (sterile) neutrino, in the so called (3+1) model. For a more detailed discussion see~\cite[sec.14]{ref:pdg}.  
 
 Notice that for sterile neutrinos to be relevant to neutrino oscillations there has to be non-negligible mixing between active and sterile states of the same chirality.
@@ -352,7 +358,7 @@ The fundamental ones are called Type-II and Type-III seesaw models, which can be
 In Type-II models the Weinberg operator is generated by an additional Higgs triplet field $\Delta$ (different from the SM Higgs \emph{H}), while Type-III models introduce a fermion SU(2) triplet $\Sigma_L$. For a more detailed discussion see~\cite{ref:front}.
 
 In addition to these theories there is a large number of effective terms that can each generate their neutrino mass. Weinberg term is the only possible 5-dimensional term using the Gauge group of the SM. However there are higher-dimensional terms e.g. 7-dimensional terms which suppress the neutrino mass by $\sim1/M^3$.
-One of the advantage of these models is that the mass scale M is lower than in three-level models. On the other side in this way the number of possible neutrino mass models quickly become very large.
+One of the advantage of these models is that the mass scale M is lower than in three-level models. On the other side in this way the number of possible neutrino mass models quickly becomes very large.
 
 \section{Nutrinoless double beta decay}
 Double beta decay ($2\nu\beta\beta$) is the simultaneous beta decay of two neutrons in a nucleus: 
@@ -363,13 +369,14 @@ It is a second order process that has been observed in even-even nuclei in which
 \begin{equation}
 (A, Z)\rightarrow(A, Z+2)+2e^-
 \end{equation}
-This process could be observed whether other possible decay channels are forbidden, and several ongoing experiments nowadays are trying to search for it.
+This process could be observed whether other possible decay channels are forbidden, 
 \begin{wrapfigure}{l}
 {0.35\textwidth}
 \includegraphics[width=0.3\textwidth]{Neutrinoless.png}
 \caption{$0\nu\beta\beta$-decay.}
-\vspace{-10pt}
+\vspace{-30pt}
 \end{wrapfigure}
+and several ongoing experiments nowadays are trying to search for it.
 This will prove the existence of Majorana neutrinos and will also give important information about neutrino mass spectrum. The decay has a unique signature, since the emitted electrons carry all the energy of the decay. The energy spectrum of the two emitted electrons therefore is a sharp peak centered around the Q-value of the decay, as shown in Figure~\ref{fig:Nspectrum}.
 \begin{figure}
 \centering
@@ -387,7 +394,7 @@ with
 \begin{equation}
 j_{\alpha}^{CC}=2\bar{\nu}_{lL}\gamma_{\alpha}l_L+j_{\alpha}^{CCquark}
 \end{equation}
-where $j_{\alpha}^{CCquark}$ is the quark charged current, $W^{\alpha}$ is the charged vector boson field and $g$ is the constatnt of electroweak interaction. The flavor neutrino field $\nu_{lL}$ is given by the mixing relation (\ref{eq:nuMix}) of Majorana neutrinos (\ref{eq:nuC}).
+where $j_{\alpha}^{CCquark}$ is the quark charged current, $W^{\alpha}$ is the charged vector boson field and $g$ is the constant of electroweak interaction. The flavor neutrino field $\nu_{lL}$ is given by the mixing relation (\ref{eq:nuMix}) of Majorana neutrinos (\ref{eq:nuC}).
 
 The effective Hamiltonian of $\beta$-decay is 
 \begin{equation}
@@ -397,7 +404,7 @@ In order to find the decay rate of this process, the matrix element for neutrino
 \begin{equation}
 \Gamma^{0\nu}=\frac{ln(2)}{T^{0\nu}_{1/2}}=|m_{\beta\beta}|^2|M^{0\nu}|^2G^{0\nu}(Q,Z)
 \end{equation}
-where the matrix element is given by the product of the effective Majorana mass $m_{\beta\beta}$ and the nuclear matrix element $M^{0\nu}$, and $G^{0\nu}(Q,Z)$ is the phase space factor, which includes effects of Coulomb interaction between electrons and the daughter nucleus. For a complete calculation of the decay rate see~\cite{ref:Bil}.
+where the matrix element is given by the product of the effective Majorana mass $m_{\beta\beta}$ and the nuclear element $M^{0\nu}$, and $G^{0\nu}(Q,Z)$ is the phase space factor, which includes effects of Coulomb interaction between electrons and the daughter nucleus. For a complete calculation of the decay rate see~\cite{ref:Bil}.
 
 A particular focus has to be set on the effective Majorana mass
 \begin{equation}
@@ -407,7 +414,7 @@ m_{\beta\beta}=\sum_{i=1}^3U_{ek}^2m_k=|c_{12}^2c_{13}^2e^{2i\alpha_1}m_1+c_{13}
 since it depends on neutrino masses (still unknown) and on the matrix elements of the PMNS matrix (\ref{eq:pmns}), which are extracted from neutrino oscillation experiments.
 
 Studying solar neutrinos we get $\Delta m_S^2\equiv\Delta m_{12}^2>0$, while from atmospheric neutrino experiments $\Delta m_A^2$ is derived.
-At this point however there are two possibilities, since we don't know values of neutrino masses but only their squared differences:
+At this point, since we don't know values of neutrino masses but only their squared differences, there are two possibilities:
 \begin{enumerate}
 \item Normal ordering (NO)
 \begin{equation}
@@ -464,7 +471,7 @@ In the table below values of the oscillation parameters in case of NO (IO) can b
 \]
 The effective Majorana mass is strongly dependent on the neutrino mass spectrum. Starting from Eq. (\ref{eq:BBmass}) and experimental values of oscillation parameters, we can derive upper and lower bounds for $m_{\beta\beta}$~\cite{ref:ver}.
 \begin{itemize}
-\item For Normal Ordering the following approximation is valid
+\item For Normal Ordering the following approximations are valid
 	\begin{equation}
 	m_1\ll\sqrt{\Delta m_S^2} \quad m_2\simeq\sqrt{\Delta m_S^2} \quad m_3\simeq\sqrt{\Delta m_A^2}
 	\end{equation}
@@ -481,13 +488,13 @@ The effective Majorana mass is strongly dependent on the neutrino mass spectrum.
 	\SI{20}{meV}\leq m_{\beta\beta} \leq \SI{49}{meV}
 	\end{equation}
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{BBboundaries.png}
 \caption{Predictions on $m_{\beta\beta}$ from neutrino oscillation versus the lightest neutrino mass $m_0$ in case of Normal (blue region) and Inverted (red region) Ordering. The excluded region by cosmological data is presented in yellow. The $3\sigma$ values of neutrino oscillation parameters are considered~\cite{ref:ver}}
 \label{fig:BBbound}
 \end{figure}
-In Figure~\ref{fig:BBbound} prediction on the effective Majorana mass is plotted as a function of the lightest neutrino mass $m_0$. The two Majorana phases $\alpha_{1,2}$ are assumed to be arbitrary. From cosmological observations~\cite{ref:cosm} it is derived the constraint~\cite[sec.25]{ref:pdgBos}
+In Figure~\ref{fig:BBbound} predictions on the effective Majorana mass are plotted as a function of the lightest neutrino mass $m_0$. The two Majorana phases $\alpha_{1,2}$ are assumed to be arbitrary. From cosmological observations~\cite{ref:cosm} it is derived the constraint~\cite[sec.25]{ref:pdgBos}
 \begin{equation}
 \sum_{k=1}^3m_k\leq\SI{120}{meV}
 \end{equation}
